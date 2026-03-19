@@ -1,0 +1,102 @@
+.contactSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  border-top: 1px solid #1e1e1e;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.contactHeading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+}
+
+.contactHeading span {
+  color: var(--acid);
+  display: block;
+}
+
+.contactSub {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--dim);
+  line-height: 1.8;
+  max-width: 340px;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #1e1e1e;
+  text-decoration: none;
+  color: var(--off-white);
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactLink::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--acid);
+  transform: translateX(-101%);
+  transition: transform 0.25s ease;
+  z-index: 0;
+}
+
+.contactLink:hover::before {
+  transform: translateX(0);
+}
+
+.contactLink:hover {
+  color: var(--black);
+  border-color: var(--acid);
+}
+
+.contactLink-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLink-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 0.2rem;
+}
+
+.contactLink-value {
+  font-family: "Space Mono", monospace;
+  font-size: 0.85rem;
+}
+
+.contactLink-arrow {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.contactLink:hover .contactLink-arrow {
+  transform: translate(3px, -3px);
+}

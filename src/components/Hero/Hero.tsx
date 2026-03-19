@@ -1,4 +1,5 @@
 import s from "./Hero.module.css";
+import { heroTiles } from "./heroTileInfo.ts";
 
 const Hero = () => {
   return (
@@ -43,23 +44,14 @@ const Hero = () => {
 
       <div className={s.heroBottom + " " + s.fadeUp + " " + s.delay4}>
         <div className={s.heroStats}>
-          <div className={s.stat}>
-            <div className={s.statNum}>3+</div>
-            <div className={s.statLabel}>Years Experience</div>
-          </div>
-          <div className={s.stat}>
-            <div className={s.statNum}>1</div>
-            <div className={s.statLabel}>Commercial Release</div>
-          </div>
-          <div className={s.stat}>
-            <div className={s.statNum}>0%</div>
-            <div className={s.statLabel}>Test Coverage</div>
-          </div>
-          <div className={s.stat}>
-            <div className={s.statNum}>∞</div>
-            <div className={s.statLabel}>Ideas</div>
-          </div>
+          {heroTiles.map((tile, index) => (
+            <div key={index} className={s.stat}>
+              <div className={s.statNum}>{tile.stat}</div>
+              <div className={s.statLabel}>{tile.statLabel}</div>
+            </div>
+          ))}
         </div>
+
         <div className={s.scrollHint}>
           Scroll to explore <span className={s.scrollArrow}>↓</span>
         </div>
