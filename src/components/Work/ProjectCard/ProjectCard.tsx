@@ -1,13 +1,15 @@
 import s from "./ProjectCard.module.css";
 
 export interface ProjectCardProps {
-  type: string; // e.g. "Professional Work", "Personal Project"
+  type: string;
   projectName: string;
   description: string;
-  stack: string[]; // e.g. ["React", "TypeScript"]
-  link: string; // URL to project or case study
+  stack: string[];
+  link: string;
   featured: boolean;
-  image: string; // URL to project image (optional, can be added later)
+  image: string;
+  subtitle: string;
+  linkIcon?: string;
 }
 
 const ProjectCard = ({
@@ -18,11 +20,17 @@ const ProjectCard = ({
   link,
   featured,
   image,
+  subtitle,
+  linkIcon,
 }: ProjectCardProps) => {
   return (
     <div className={s.projectCard + (featured ? " " + s.featured : "")}>
       <div className={s.projectType}>{type}</div>
-      <div className={s.projectName}>{projectName}</div>
+      <div className={s.projectName}>
+        {projectName}
+        <div className={s.projectSubtitle}>{subtitle}</div>
+      </div>
+
       <p className={s.projectDesc}>{description}</p>
       <img
         src={image}
@@ -42,7 +50,11 @@ const ProjectCard = ({
         rel="noopener noreferrer"
         className={s.projectLink}
       >
-        ↗
+        {linkIcon ? (
+          <img src={linkIcon} alt="Link Icon" className={s.linkIcon} />
+        ) : (
+          "↗"
+        )}
       </a>
     </div>
   );

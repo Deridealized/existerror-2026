@@ -3,7 +3,7 @@ import s from "./Nav.module.css";
 const Nav = () => {
   return (
     <nav>
-      <div className={s.navSig}>JAMIE HEY</div>
+      <div className={s.navSig}>JAMIE HEY / existerror</div>
       <ul className={s.navLinks}>
         <li>
           <a href="#work">Work</a>

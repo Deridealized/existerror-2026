@@ -19,11 +19,13 @@ const Work = () => {
               key={index}
               type={project.projectType}
               projectName={project.projectName}
+              subtitle={project.subtitle}
               description={project.description}
               stack={project.stack}
               link={project.link}
               featured={project.featured}
               image={project.image}
+              linkIcon={project.linkIcon}
             />
           ))}
         </div>

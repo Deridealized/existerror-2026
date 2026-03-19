@@ -4,7 +4,6 @@
   position: relative;
   overflow: hidden;
   transition: background 0.2s;
-  cursor: pointer;
 }
 
 .projectCard:hover {
@@ -40,6 +39,25 @@
   line-height: 1;
   margin-bottom: 1rem;
   letter-spacing: 0.02em;
+}
+
+.projectSubtitle {
+  font-size: 0.75rem;
+  color: var(--acid);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.linkIcon {
+  width: 30px;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.linkIcon:hover {
+  filter: brightness(1.8);
+  filter: blur(1px);
 }
 
 .projectDesc {
