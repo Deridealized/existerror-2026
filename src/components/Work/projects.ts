@@ -41,11 +41,12 @@ export const projects: Project[] = [
     linkIcon: steam,
   },
   {
-    projectType: "Professional Work — React",
-    projectName: "Classified Client Portal",
-    subtitle: "Day job",
-    description: `Cannot disclose details of this project, but it involved building a secure client portal in the finance industry, upgrading a dated system from Hugo to React.
+    projectType: "Professional Work — React / TypeScript",
+    projectName: "Client Portal",
+    subtitle: "Classified",
+    description: `Building a secure client portal in the finance industry, upgrading a dated system from Hugo to React.
       I was part of the frontend team using React and TypeScript, ensuring a seamless user experience while adhering to financial industry standards.
+      C# microservices and API's, hasura data layer, AWS infrastructure, and agile methodologies were also part of the stack.
       It's not classified, but it's proprietary, so I can't share more. Just know it was a big deal and I did a great job!`,
     stack: [
       "React",
