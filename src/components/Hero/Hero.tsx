@@ -6,9 +6,7 @@ const Hero = () => {
       <div className={s.heroBgText}>BOTH</div>
 
       <div className={s.heroMain}>
-        <div className={s.heroTag + " " + s.fadeUp}>
-          Engineer. Designer. Available.
-        </div>
+        <div className={s.heroTag + " " + s.fadeUp}>Engineer. Designer.</div>
         <h1 className={s.delay1}>
           <span className={s.nameLineA}>JAMIE</span>
           <span className={s.nameLineB}>HEY.</span>
@@ -16,9 +14,9 @@ const Hero = () => {
         <p className={s.heroRole + " " + s.fadeUp + " " + s.delay2}>
           UI/UX that people actually want to use.
           <br />
-          React specialist. C# developer.
+          Web Dev. React. C#.
           <br />
-          Game Developer. Adobe enthusiast.
+          Unity Game Developer. Adobe enthusiast.
         </p>
         <div className={s.heroCta + " " + s.fadeUp + " " + s.delay3}>
           <a href="#work" className={s.btnPrimary}>
@@ -52,6 +50,10 @@ const Hero = () => {
           <div className={s.stat}>
             <div className={s.statNum}>1</div>
             <div className={s.statLabel}>Commercial Release</div>
+          </div>
+          <div className={s.stat}>
+            <div className={s.statNum}>0%</div>
+            <div className={s.statLabel}>Test Coverage</div>
           </div>
           <div className={s.stat}>
             <div className={s.statNum}>∞</div>

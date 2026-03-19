@@ -88,6 +88,30 @@ h1 {
   }
 }
 
+h1:hover .nameLineA {
+  animation: glitch-text 0.3s steps(1) 2;
+}
+
+@keyframes glitch-text {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+    text-shadow: 2px 0 var(--acid);
+  }
+  50% {
+    transform: translateX(3px);
+    text-shadow: -2px 0 #ff003c;
+  }
+  75% {
+    transform: translateX(-1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .nameLineA {
   color: var(--off-white);
   display: block;

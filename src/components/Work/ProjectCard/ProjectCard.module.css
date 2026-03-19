@@ -1,0 +1,93 @@
+.projectCard {
+  background: var(--black);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  background: #111;
+}
+
+.projectCard::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--acid);
+  transition: width 0.3s ease;
+}
+
+.projectCard:hover::after {
+  width: 100%;
+}
+
+.projectType {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--acid);
+  margin-bottom: 1rem;
+}
+
+.projectName {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.projectDesc {
+  font-size: 0.8rem;
+  color: var(--dim);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 380px;
+}
+
+.projectStack {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid #333;
+  color: var(--dim);
+}
+
+.projectArrow {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.projectCard:hover .project-arrow {
+  color: var(--acid);
+  transform: translate(3px, -3px);
+}
+
+.projectCard.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.projectImage {
+  width: 100%;
+  border: 1px solid #333;
+}
