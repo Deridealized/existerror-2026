@@ -70,14 +70,14 @@
   border-color: var(--color-limegreen);
 }
 
-.contactLink-content {
+.contactLinkContent {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
 }
 
-.contactLink-label {
+.contactLinkLabel {
   font-size: 0.6rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -85,19 +85,19 @@
   margin-bottom: 0.2rem;
 }
 
-.contactLink-value {
+.contactLinkValue {
   font-family: "Space Mono", monospace;
   font-size: 0.85rem;
 }
 
-.contactLink-arrow {
+.contactLinkArrow {
   position: relative;
   z-index: 1;
   font-size: 1rem;
   transition: transform 0.2s;
 }
 
-.contactLink:hover .contactLink-arrow {
+.contactLink:hover .contactLinkArrow {
   transform: translate(3px, -3px);
 }
 

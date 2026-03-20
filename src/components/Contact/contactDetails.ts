@@ -1,16 +1,16 @@
 export const contactDetails = [
   {
-    label: "GitHub: ",
-    value: "github.com/deridealized",
+    label: "GitHub",
+    value: "Deridealized",
     link: "https://github.com/deridealized",
   },
   {
-    label: "LinkedIn: ",
-    value: "linkedin.com/in/jamiehey",
+    label: "LinkedIn",
+    value: "/JamieHey",
     link: "https://linkedin.com/in/jamiehey",
   },
   {
-    label: "Email: ",
+    label: "Email",
     value: "jamie.hey@sky.com",
     link: "mailto:jamie.hey@sky.com",
   },
