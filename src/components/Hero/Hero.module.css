@@ -340,9 +340,13 @@ h1:hover .nameLineA {
   }
   .heroRight {
     grid-column: 1;
+    grid-row: 2;
     align-items: flex-start;
   }
   .heroBgText {
     font-size: 35vw;
+  }
+  .heroBottom {
+    grid-row: 3;
   }
 }
