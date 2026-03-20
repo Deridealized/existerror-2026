@@ -4,16 +4,12 @@ export const heroTiles = [
     statLabel: "Engineering YoE",
   },
   {
-    stat: "10+",
-    statLabel: "Design YoE",
+    stat: "15+",
+    statLabel: "Creative YoE",
   },
   {
     stat: "1",
-    statLabel: "Commercial Release",
-  },
-  {
-    stat: "∞",
-    statLabel: "Ideas",
+    statLabel: "Steam Release",
   },
   {
     stat: "0%",

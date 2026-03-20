@@ -10,10 +10,9 @@ const Contact = () => {
             Let's<span className={s.contactHeadingSpan}>Work</span>Together.
           </h2>
           <p className={s.contactSub}>
-            I'm looking for frontend roles where design is a part of the
-            process, not seen as a separate team. A team where I am utilised as
-            both a designer and a developer. Midlands-based, looking for
-            remote, open to hybrid.
+            I'm looking for frontend roles where design is a part of the process
+            - where I am utilised as both a designer and a developer.
+            Midlands-based, remote preferred, open to hybrid.
           </p>
         </div>
         <div className={s.contactLinks}>

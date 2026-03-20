@@ -51,7 +51,7 @@ export const projects: Project[] = [
     description: `I've been with Corpay for 3 years. After passing my apprenticeship, I joined the team on building a secure client portal.
       Initially upgrading a dated system from Hugo to React, we now maintain and enhance the portal, ensuring it meets the needs of our clients and stakeholders.
       Adhering to financial industry standards, using C# microservices and API's, hasura data layer, AWS infrastructure, and agile methodologies.
-      It's not classified, but it's proprietary, so I can't share more. Just know it's a big deal and I'm smashing it!`,
+      It's not classified, but it's proprietary, so I can't share more. Just know it's a big deal.`,
     stack: [
       "React",
       "TypeScript",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     projectName: "Don't Forget to Smile 2",
     subtitle: "Existerror Digital",
     description: `3D Sequel to Don't Forget to Smile, currently in development.
-    This time I'm taking the survivors formula and giving it a fresh twist with 3D graphics and more complex mechanics. In early development.`,
+    This time I'm taking the survivors formula and giving it a fresh twist with 3D graphics and more complex mechanics.`,
     stack: ["Unity", "C#", "Blender", "Adobe Suite", "FL Studio"],
     link: "",
     featured: false,
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     projectType: "Website — React / TypeScript",
     projectName: "This Portfolio",
     subtitle: "",
-    description: `React frontend with TypeScript, built from scratch. I wanted to create a personal portfolio that showcased my work and skills in a clean and modern way.
+    description: `React frontend with TypeScript, built from scratch. I wanted to create a personal portfolio that showcased my work and skills in a brutalist and distinctive way.
     It is also a playground for me to experiment with new technologies and design trends, 
     while also being a reflection of my personal brand and style. The design is minimalistic and inkeeping with the themes and aesthetics of my game projects.`,
     stack: [
