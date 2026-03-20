@@ -1,3 +1,4 @@
+import type { ExtraCredit } from "../projects";
 import s from "./ProjectCard.module.css";
 
 export interface ProjectCardProps {
@@ -11,6 +12,7 @@ export interface ProjectCardProps {
   subtitle: string;
   linkIcon?: string;
   badgeText?: string;
+  extraCredit?: ExtraCredit;
 }
 
 const ProjectCard = ({
@@ -24,6 +26,7 @@ const ProjectCard = ({
   subtitle,
   linkIcon,
   badgeText,
+  extraCredit,
 }: ProjectCardProps) => {
   return (
     <div className={s.projectCard + (featured ? " " + s.featured : "")}>
@@ -44,6 +47,16 @@ const ProjectCard = ({
               {tech}
             </span>
           ))}
+          {extraCredit && (
+            <a
+              className={s.tag}
+              href={extraCredit.link}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {extraCredit.label}
+            </a>
+          )}
         </div>
       </div>
       <div className={featured ? s.featuredVisual : ""}>

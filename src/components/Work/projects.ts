@@ -17,6 +17,12 @@ type Project = {
   subtitle: string;
   linkIcon?: string;
   badgeText?: string;
+  extraCredit?: ExtraCredit;
+};
+
+export type ExtraCredit = {
+  label: string;
+  link: string;
 };
 
 export const projects: Project[] = [
@@ -43,6 +49,10 @@ export const projects: Project[] = [
     image: screenshot1,
     linkIcon: "",
     badgeText: "Steam Release",
+    extraCredit: {
+      label: "Audio: Frank Bramble",
+      link: "https://www.flowcode.com/page/frankbramble",
+    },
   },
   {
     projectType: "Professional Work — React / TypeScript",
