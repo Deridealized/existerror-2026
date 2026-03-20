@@ -94,7 +94,7 @@
   transition: all 0.2s;
 }
 
-.projectCard:hover .project-arrow {
+.projectCard:hover .projectArrow {
   color: var(--color-limegreen);
   transform: translate(3px, -3px);
 }

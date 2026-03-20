@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
 
         <div className={s.scrollHint}>
-          Scroll to explore <span className={s.scrollArrow}>↓</span>
+          There's more<span className={s.scrollArrow}>↓</span>
         </div>
       </div>
     </div>

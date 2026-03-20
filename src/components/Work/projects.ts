@@ -2,7 +2,7 @@
 //import achievement from "../../assets/images/DFTS/AchievementIcon_01.png";
 import screenshot1 from "../../assets/images/DFTS/20250409103753_1.jpg";
 import corpay from "../../assets/Images/Generic/corpay_01.png";
-import steam from "../../assets/Images/Generic/steam.png";
+//import steam from "../../assets/Images/Generic/steam.png";
 import portfolio from "../../assets/Images/Generic/portfolio-01.png";
 import dfts2 from "../../assets/Images/Generic/dfts2-01.png";
 
@@ -41,8 +41,8 @@ export const projects: Project[] = [
     link: "https://store.steampowered.com/app/3579390/Dont_Forget_to_Smile/",
     featured: true,
     image: screenshot1,
-    linkIcon: steam,
-    badgeText: "Commercial Release",
+    linkIcon: "",
+    badgeText: "Steam Release",
   },
   {
     projectType: "Professional Work — React / TypeScript",

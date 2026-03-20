@@ -10,7 +10,7 @@ function App() {
     <div>
       <Nav />
       <Hero />
-      <Work /> {/* TODO: Nicer imagery and copy, fix arrow animation */}
+      <Work />
       <Skills />
       <Contact /> {/* TODO: FIX HOVER COLOUR ON TEXT */}
       <Footer />

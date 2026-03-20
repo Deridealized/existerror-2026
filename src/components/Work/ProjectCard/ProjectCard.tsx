@@ -52,19 +52,19 @@ const ProjectCard = ({
           alt={`${projectName} screenshot`}
           className={s.projectImage}
         />
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={s.projectArrow}
-        >
-          {linkIcon ? (
-            <img src={linkIcon} alt="Link Icon" className={s.linkIcon} />
-          ) : (
-            "↗"
-          )}
-        </a>
       </div>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={s.projectArrow}
+      >
+        {linkIcon ? (
+          <img src={linkIcon} alt="Link Icon" className={s.linkIcon} />
+        ) : (
+          "↗"
+        )}
+      </a>
     </div>
   );
 };
