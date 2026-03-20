@@ -1,5 +1,5 @@
 .projectCard {
-  background: var(--black);
+  background: var(--color-black);
   padding: 2.5rem;
   position: relative;
   overflow: hidden;
@@ -17,7 +17,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--acid);
+  background: var(--color-limegreen);
   transition: width 0.3s ease;
 }
 
@@ -31,7 +31,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--acid);
+  color: var(--color-limegreen);
   margin-bottom: 1rem;
 }
 
@@ -45,7 +45,7 @@
 
 .projectSubtitle {
   font-size: 0.75rem;
-  color: var(--acid);
+  color: var(--color-limegreen);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -64,7 +64,7 @@
 
 .projectDesc {
   font-size: 0.8rem;
-  color: var(--dim);
+  color: var(--color-primary-grey);
   line-height: 1.8;
   margin-bottom: 1.5rem;
   max-width: 380px;
@@ -82,7 +82,7 @@
   text-transform: uppercase;
   padding: 0.2rem 0.6rem;
   border: 1px solid #333;
-  color: var(--dim);
+  color: var(--color-primary-grey);
 }
 
 .projectArrow {
@@ -95,7 +95,7 @@
 }
 
 .projectCard:hover .project-arrow {
-  color: var(--acid);
+  color: var(--color-limegreen);
   transform: translate(3px, -3px);
 }
 
@@ -115,8 +115,8 @@
 
 .featuredBadge {
   display: inline-block;
-  background: var(--acid);
-  color: var(--black);
+  background: var(--color-limegreen);
+  color: var(--color-black);
   font-size: 0.55rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;

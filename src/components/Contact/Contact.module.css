@@ -20,14 +20,14 @@
 }
 
 .contactHeading span {
-  color: var(--acid);
+  color: var(--color-limegreen);
   display: block;
 }
 
 .contactSub {
   margin-top: 1.5rem;
   font-size: 0.8rem;
-  color: var(--dim);
+  color: var(--color-primary-grey);
   line-height: 1.8;
   max-width: 340px;
 }
@@ -45,7 +45,7 @@
   padding: 1.25rem 1.5rem;
   border: 1px solid #1e1e1e;
   text-decoration: none;
-  color: var(--off-white);
+  color: var(--color-off-white);
   transition: all 0.2s;
   position: relative;
   overflow: hidden;
@@ -55,7 +55,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--acid);
+  background: var(--color-limegreen);
   transform: translateX(-101%);
   transition: transform 0.25s ease;
   z-index: 0;
@@ -66,8 +66,8 @@
 }
 
 .contactLink:hover {
-  color: var(--black);
-  border-color: var(--acid);
+  color: var(--color-black);
+  border-color: var(--color-limegreen);
 }
 
 .contactLink-content {

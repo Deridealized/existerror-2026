@@ -7,12 +7,12 @@
 
 .skillsIntro {
   font-size: 0.85rem;
-  color: var(--dim);
+  color: var(--color-primary-grey);
   line-height: 1.9;
 }
 
 .skillsIntro strong {
-  color: var(--off-white);
+  color: var(--color-off-white);
   font-weight: normal;
 }
 
@@ -26,7 +26,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--acid);
+  color: var(--color-limegreen);
   margin-bottom: 1rem;
 }
 
@@ -41,14 +41,14 @@
   letter-spacing: 0.05em;
   padding: 0.4rem 0.9rem;
   border: 1px solid #222;
-  color: var(--off-white);
+  color: var(--color-off-white);
   transition: all 0.15s;
   cursor: default;
 }
 
 .skillItem:hover {
-  border-color: var(--acid);
-  color: var(--acid);
+  border-color: var(--color-limegreen);
+  color: var(--color-limegreen);
   background: rgba(200, 240, 0, 0.04);
 }
 
@@ -70,7 +70,7 @@ section {
 .sectionNum {
   font-size: 0.65rem;
   letter-spacing: 0.2em;
-  color: var(--acid);
+  color: var(--color-limegreen);
 }
 
 .sectionTitle {
@@ -81,7 +81,7 @@ section {
 }
 
 .sectionTitle em {
-  color: var(--acid);
+  color: var(--color-limegreen);
   font-style: normal;
 }
 

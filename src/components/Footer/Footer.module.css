@@ -12,7 +12,7 @@ footer {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.1em;
-  color: var(--dim);
+  color: var(--color-primary-grey);
 }
 
 .footerNote {

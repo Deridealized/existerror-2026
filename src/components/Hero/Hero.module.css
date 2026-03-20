@@ -35,7 +35,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--acid);
+  color: var(--color-limegreen);
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@
   display: inline-block;
   width: 2rem;
   height: 1px;
-  background: var(--acid);
+  background: var(--color-limegreen);
 }
 
 h1 {
@@ -98,7 +98,7 @@ h1:hover .nameLineA {
   }
   25% {
     transform: translateX(-3px);
-    text-shadow: 2px 0 var(--acid);
+    text-shadow: 2px 0 var(--color-limegreen);
   }
   50% {
     transform: translateX(3px);
@@ -113,11 +113,11 @@ h1:hover .nameLineA {
 }
 
 .nameLineA {
-  color: var(--off-white);
+  color: var(--color-off-white);
   display: block;
 }
 .nameLineB {
-  color: var(--acid);
+  color: var(--color-limegreen);
   display: block;
 }
 
@@ -125,7 +125,7 @@ h1:hover .nameLineA {
   margin-top: 2rem;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
-  color: var(--dim);
+  color: var(--color-primary-grey);
   text-transform: uppercase;
   max-width: 320px;
   line-height: 1.8;
@@ -141,8 +141,8 @@ h1:hover .nameLineA {
 .btnPrimary {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background: var(--acid);
-  color: var(--black);
+  background: var(--color-limegreen);
+  color: var(--color-black);
   font-family: "Share Tech Mono", monospace;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
@@ -162,13 +162,13 @@ h1:hover .nameLineA {
 }
 
 .btnPrimary:hover {
-  background: var(--off-white);
+  background: var(--color-off-white);
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--acid);
+  box-shadow: 4px 4px 0 var(--color-limegreen);
 }
 
 .btnSecondary {
-  color: var(--dim);
+  color: var(--color-primary-grey);
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -177,7 +177,7 @@ h1:hover .nameLineA {
 }
 
 .btnSecondary:hover {
-  color: var(--off-white);
+  color: var(--color-off-white);
 }
 
 .heroRight {
@@ -203,24 +203,24 @@ h1:hover .nameLineA {
   position: absolute;
   top: -0.5rem;
   left: 1rem;
-  background: var(--black);
+  background: var(--color-black);
   padding: 0 0.5rem;
   font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--acid);
+  color: var(--color-limegreen);
 }
 
 .statusValue {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.05em;
-  color: var(--off-white);
+  color: var(--color-off-white);
 }
 
 .statusSub {
   font-size: 0.65rem;
-  color: var(--dim);
+  color: var(--color-primary-grey);
   letter-spacing: 0.1em;
   margin-top: 0.25rem;
 }
@@ -230,7 +230,7 @@ h1:hover .nameLineA {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--acid);
+  background: var(--color-limegreen);
   margin-right: 0.5rem;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -268,14 +268,14 @@ h1:hover .nameLineA {
 .statNum {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
-  color: var(--off-white);
+  color: var(--color-off-white);
   line-height: 1;
 }
 .statLabel {
   font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--dim);
+  color: var(--color-primary-grey);
   margin-top: 0.2rem;
 }
 
@@ -283,7 +283,7 @@ h1:hover .nameLineA {
   font-size: 0.65rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--dim);
+  color: var(--color-primary-grey);
   display: flex;
   align-items: center;
   gap: 0.5rem;

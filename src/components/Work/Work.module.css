@@ -23,7 +23,7 @@ section {
 .sectionNum {
   font-size: 0.65rem;
   letter-spacing: 0.2em;
-  color: var(--acid);
+  color: var(--color-limegreen);
 }
 
 .sectionTitle {
@@ -34,7 +34,7 @@ section {
 }
 
 .sectionTitle em {
-  color: var(--acid);
+  color: var(--color-limegreen);
   font-style: normal;
 }
 
