@@ -37,7 +37,7 @@ const Hero = () => {
           <div className={s.statusSub}>Frontend / Design — Tamworth, UK</div>
         </div>
         <div className={s.statusBlock} data-label="Current Focus">
-          <div className={s.statusValue}>Interactive / Games</div>
+          <div className={s.statusValue}>Dev / Design</div>
           <div className={s.statusSub}>Mid Level Positions</div>
         </div>
       </div>

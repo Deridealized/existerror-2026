@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <Hero /> {/* TODO: Current focus copy */}
+      <Hero />
       <Work /> {/* TODO: Nicer imagery and copy, fix arrow animation */}
       <Skills />
       <Contact /> {/* TODO: FIX HOVER COLOUR ON TEXT */}
