@@ -34,7 +34,7 @@ const Hero = () => {
           <div className={s.statusValue}>
             <span className={s.availabilityDot}></span>Open to Roles
           </div>
-          <div className={s.statusSub}>Frontend / Design — Tamworth, UK</div>
+          <div className={s.statusSub}>Frontend / Games / Creative Tech</div>
         </div>
         <div className={s.statusBlock} data-label="Current Focus">
           <div className={s.statusValue}>Dev / Design</div>
