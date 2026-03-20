@@ -100,3 +100,10 @@
 .contactLink:hover .contactLink-arrow {
   transform: translate(3px, -3px);
 }
+
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

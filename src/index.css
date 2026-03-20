@@ -44,19 +44,7 @@ body::before {
   );
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.15;
-}
-
-/* Grain texture */
-body::after {
-  content: "";
-  position: fixed;
-  inset: -50%;
-  width: 200%;
-  height: 200%;
-  pointer-events: none;
-  z-index: 9998;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 /* Responsive */
@@ -65,31 +53,31 @@ body::after {
     grid-template-columns: 1fr;
     padding: 7rem 1.5rem 3rem;
   }
-  .hero-right {
+  .heroRight {
     grid-column: 1;
     align-items: flex-start;
   }
-  .hero-bg-text {
+  .heroBgText {
     font-size: 35vw;
   }
-  .projects-grid {
+  .projectsGrid {
     grid-template-columns: 1fr;
   }
-  .project-card.featured {
+  .projectCard.featured {
     grid-column: 1;
     grid-template-columns: 1fr;
   }
-  .skills-layout {
+  .skillsLayout {
     grid-template-columns: 1fr;
   }
-  .contact-grid {
+  .contactGrid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
   nav {
     padding: 1rem 1.5rem;
   }
-  .nav-links {
+  .navLinks {
     gap: 1.2rem;
   }
 }

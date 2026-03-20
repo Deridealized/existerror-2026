@@ -17,7 +17,7 @@ const Hero = () => {
           <br />
           Web Dev. React. C#.
           <br />
-          Unity Game Developer. Adobe enthusiast.
+          Unity Game Developer. Adobe veteran.
         </p>
         <div className={s.heroCta + " " + s.fadeUp + " " + s.delay3}>
           <a href="#work" className={s.btnPrimary}>

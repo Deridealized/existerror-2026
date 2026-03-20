@@ -84,3 +84,9 @@ section {
   color: var(--acid);
   font-style: normal;
 }
+
+@media (max-width: 768px) {
+  .skillsLayout {
+    grid-template-columns: 1fr;
+  }
+}

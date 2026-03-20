@@ -332,3 +332,17 @@ h1:hover .nameLineA {
 .delay5 {
   animation-delay: 0.7s;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 7rem 1.5rem 3rem;
+  }
+  .heroRight {
+    grid-column: 1;
+    align-items: flex-start;
+  }
+  .heroBgText {
+    font-size: 35vw;
+  }
+}

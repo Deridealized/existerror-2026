@@ -37,3 +37,9 @@ section {
   color: var(--acid);
   font-style: normal;
 }
+
+@media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,11 +1,13 @@
 //import dftsTitle from "../../assets/images/DFTS/DFTS_V1full.png";
-import achievement from "../../assets/images/DFTS/AchievementIcon_01.png";
+//import achievement from "../../assets/images/DFTS/AchievementIcon_01.png";
 import screenshot1 from "../../assets/images/DFTS/20250409103753_1.jpg";
 import corpay from "../../assets/Images/Generic/corpay_01.png";
 import steam from "../../assets/Images/Generic/steam.png";
+import portfolio from "../../assets/Images/Generic/portfolio-01.png";
+import dfts2 from "../../assets/Images/Generic/dfts2-01.png";
 
 type Project = {
-  projectType: string; // e.g. "Professional Work", "Personal Project"
+  projectType: string;
   projectName: string;
   description: string;
   stack: string[];
@@ -74,8 +76,20 @@ export const projects: Project[] = [
     description: `3D Sequel to Don't Forget to Smile, currently in development.
     This time I'm taking the survivors formula and giving it a fresh twist with 3D graphics and more complex mechanics.`,
     stack: ["Unity", "C#", "Blender", "Adobe Suite", "FL Studio"],
-    link: "#",
+    link: "",
     featured: false,
-    image: achievement,
+    image: dfts2,
+  },
+  {
+    projectType: "Website — React / TypeScript",
+    projectName: "This Portfolio",
+    subtitle: "",
+    description: `React frontend with TypeScript, built from scratch. I wanted to create a personal portfolio that showcased my work and skills in a clean and modern way;
+    possibly not enough to include it here, but hey, it's a project!`,
+    stack: ["React", "TypeScript", "CSS Modules", "Vite", "Git"],
+    link: "",
+    featured: false,
+    image: portfolio,
+    linkIcon: "",
   },
 ];
