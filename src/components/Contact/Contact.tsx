@@ -14,6 +14,10 @@ const Contact = () => {
             the intersection of engineering and craft. Midlands-based, remote
             preferred, open to hybrid.
           </p>
+          <p className={s.contactSub}>
+            I'm a husband and father of two. Too many board games. Motorbikes.
+            Download Festival. Airsoft.
+          </p>
         </div>
         <div className={s.contactLinks}>
           {contactDetails.map((contact, index) => (
