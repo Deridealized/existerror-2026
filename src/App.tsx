@@ -12,7 +12,7 @@ function App() {
       <Hero />
       <Work />
       <Skills />
-      <Contact /> {/* TODO: FIX HOVER COLOUR ON TEXT */}
+      <Contact />
       <Footer />
     </div>
   );
