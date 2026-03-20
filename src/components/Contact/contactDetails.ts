@@ -2,12 +2,12 @@ export const contactDetails = [
   {
     label: "GitHub: ",
     value: "github.com/deridealized",
-    link: "",
+    link: "https://github.com/deridealized",
   },
   {
     label: "LinkedIn: ",
     value: "linkedin.com/in/jamiehey",
-    link: "",
+    link: "https://linkedin.com/in/jamiehey",
   },
   {
     label: "Email: ",
