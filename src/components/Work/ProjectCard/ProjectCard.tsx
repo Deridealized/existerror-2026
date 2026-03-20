@@ -10,6 +10,7 @@ export interface ProjectCardProps {
   image: string;
   subtitle: string;
   linkIcon?: string;
+  badgeText?: string;
 }
 
 const ProjectCard = ({
@@ -22,11 +23,12 @@ const ProjectCard = ({
   image,
   subtitle,
   linkIcon,
+  badgeText,
 }: ProjectCardProps) => {
   return (
     <div className={s.projectCard + (featured ? " " + s.featured : "")}>
       <div>
-        {featured && <div className={s.featuredBadge}>Commercial Release</div>}
+        {badgeText && <div className={s.featuredBadge}>{badgeText}</div>}
 
         <div className={s.projectType}>{type}</div>
         <div className={s.projectName}>

@@ -26,6 +26,7 @@ const Work = () => {
               featured={project.featured}
               image={project.image}
               linkIcon={project.linkIcon}
+              badgeText={project.badgeText}
             />
           ))}
         </div>

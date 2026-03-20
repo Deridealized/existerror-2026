@@ -16,6 +16,7 @@ type Project = {
   image: string;
   subtitle: string;
   linkIcon?: string;
+  badgeText?: string;
 };
 
 export const projects: Project[] = [
@@ -41,15 +42,16 @@ export const projects: Project[] = [
     featured: true,
     image: screenshot1,
     linkIcon: steam,
+    badgeText: "Commercial Release",
   },
   {
     projectType: "Professional Work — React / TypeScript",
     projectName: "Client Portal",
     subtitle: "Classified",
-    description: `Building a secure client portal in the finance industry, upgrading a dated system from Hugo to React.
-      I was part of the frontend team using React and TypeScript, ensuring a seamless user experience while adhering to financial industry standards.
-      C# microservices and API's, hasura data layer, AWS infrastructure, and agile methodologies were also part of the stack.
-      It's not classified, but it's proprietary, so I can't share more. Just know it was a big deal and I did a great job!`,
+    description: `I've been with Corpay for 3 years. After passing my apprenticeship, I joined the team on building a secure client portal.
+      Initially upgrading a dated system from Hugo to React, we now maintain and enhance the portal, ensuring it meets the needs of our clients and stakeholders.
+      Adhering to financial industry standards, using C# microservices and API's, hasura data layer, AWS infrastructure, and agile methodologies.
+      It's not classified, but it's proprietary, so I can't share more. Just know it's a big deal and I'm smashing it!`,
     stack: [
       "React",
       "TypeScript",
@@ -68,6 +70,7 @@ export const projects: Project[] = [
     link: "#",
     featured: false,
     image: corpay,
+    badgeText: "In Production",
   },
   {
     projectType: "Game Development — Unity / C#",
@@ -79,6 +82,7 @@ export const projects: Project[] = [
     link: "",
     featured: false,
     image: dfts2,
+    badgeText: "In Development",
   },
   {
     projectType: "Website — React / TypeScript",
@@ -87,7 +91,15 @@ export const projects: Project[] = [
     description: `React frontend with TypeScript, built from scratch. I wanted to create a personal portfolio that showcased my work and skills in a clean and modern way.
     It is also a playground for me to experiment with new technologies and design trends, 
     while also being a reflection of my personal brand and style. The design is minimalistic and inkeeping with the themes and aesthetics of my game projects.`,
-    stack: ["React", "TypeScript", "CSS Modules", "Vite", "Git"],
+    stack: [
+      "React",
+      "TypeScript",
+      "CSS Modules",
+      "Vite",
+      "Git",
+      "React Router",
+      "Data Driven",
+    ],
     link: "",
     featured: false,
     image: portfolio,
