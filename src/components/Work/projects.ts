@@ -1,6 +1,6 @@
 //import dftsTitle from "../../assets/images/DFTS/DFTS_V1full.png";
 //import achievement from "../../assets/images/DFTS/AchievementIcon_01.png";
-import screenshot1 from "../../assets/images/DFTS/20250409103753_1.jpg";
+import screenshot1 from "../../assets/Images/DFTS/20250409103753_1.jpg";
 import corpay from "../../assets/Images/Generic/corpay_01.png";
 //import steam from "../../assets/Images/Generic/steam.png";
 import portfolio from "../../assets/Images/Generic/portfolio-01.png";
