@@ -74,7 +74,7 @@ export const projects: Project[] = [
     projectName: "Don't Forget to Smile 2",
     subtitle: "Existerror Digital",
     description: `3D Sequel to Don't Forget to Smile, currently in development.
-    This time I'm taking the survivors formula and giving it a fresh twist with 3D graphics and more complex mechanics.`,
+    This time I'm taking the survivors formula and giving it a fresh twist with 3D graphics and more complex mechanics. In early development.`,
     stack: ["Unity", "C#", "Blender", "Adobe Suite", "FL Studio"],
     link: "",
     featured: false,
@@ -84,8 +84,9 @@ export const projects: Project[] = [
     projectType: "Website — React / TypeScript",
     projectName: "This Portfolio",
     subtitle: "",
-    description: `React frontend with TypeScript, built from scratch. I wanted to create a personal portfolio that showcased my work and skills in a clean and modern way;
-    possibly not enough to include it here, but hey, it's a project!`,
+    description: `React frontend with TypeScript, built from scratch. I wanted to create a personal portfolio that showcased my work and skills in a clean and modern way.
+    It is also a playground for me to experiment with new technologies and design trends, 
+    while also being a reflection of my personal brand and style. The design is minimalistic and inkeeping with the themes and aesthetics of my game projects.`,
     stack: ["React", "TypeScript", "CSS Modules", "Vite", "Git"],
     link: "",
     featured: false,
