@@ -2,5 +2,5 @@ Custom cursor
 Framer Motion page transitions
 
 Case study pages for projects
-CV/resume download button
+CV download button
 
