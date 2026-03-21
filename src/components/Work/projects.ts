@@ -49,7 +49,7 @@ export const projects: Project[] = [
       "Photoshop",
       "Illustrator",
       "After Effects",
-      "Media Encoder",
+      "FMOD",
       "FL Studio",
       "Solo Dev",
       "Steam",
