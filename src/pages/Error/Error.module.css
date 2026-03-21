@@ -1,0 +1,353 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-black);
+  color: var(--color-off-white);
+  font-family: "Share Tech Mono", monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Scanlines */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.25) 2px,
+    rgba(0, 0, 0, 0.25) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.15;
+}
+
+/* Grain */
+body::after {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.4;
+  animation: grain 0.5s steps(1) infinite;
+}
+
+@keyframes grain {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-2%, -3%);
+  }
+  20% {
+    transform: translate(3%, 1%);
+  }
+  30% {
+    transform: translate(-1%, 4%);
+  }
+  40% {
+    transform: translate(4%, -2%);
+  }
+  50% {
+    transform: translate(-3%, 3%);
+  }
+  60% {
+    transform: translate(2%, -4%);
+  }
+  70% {
+    transform: translate(-4%, 1%);
+  }
+  80% {
+    transform: translate(1%, -1%);
+  }
+  90% {
+    transform: translate(3%, 3%);
+  }
+}
+
+/* Background 404 */
+.bgText {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(12rem, 35vw, 30rem);
+  color: transparent;
+  -webkit-text-stroke: 1px #1a1a1a;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.02em;
+  z-index: 0;
+}
+
+/* Terminal container */
+.terminal {
+  position: relative;
+  z-index: 10;
+  width: min(640px, 90vw);
+  border: 1px solid #222;
+  background: rgba(10, 10, 10, 0.95);
+}
+
+.terminalBar {
+  background: #141414;
+  border-bottom: 1px solid #222;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terminalDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #333;
+}
+
+.terminalTitle {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-primary-grey);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terminalBody {
+  padding: 2rem;
+}
+
+.line {
+  font-size: 0.8rem;
+  line-height: 2;
+  color: var(--color-primary-grey);
+}
+
+.line.command {
+  color: var(--color-off-white);
+}
+
+.line.command::before {
+  content: "> ";
+  color: var(--color-limegreen);
+}
+
+.line.error {
+  color: #ff003c;
+}
+
+.line.warning {
+  color: var(--color-limegreen);
+}
+
+.line.gap {
+  display: block;
+  height: 0.8rem;
+}
+
+/* Big error code */
+.errorCode {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 10vw, 6rem);
+  color: var(--color-off-white);
+  line-height: 1;
+  margin: 1.5rem 0 0.5rem;
+  animation: glitch 4s steps(1) infinite;
+}
+
+.errorCode span {
+  color: var(--color-limegreen);
+}
+
+@keyframes glitch {
+  0%,
+  90%,
+  100% {
+    text-shadow: none;
+    transform: translateX(0);
+  }
+  92% {
+    transform: translateX(-3px);
+    text-shadow: 2px 0 var(--color-limegreen);
+  }
+  94% {
+    transform: translateX(3px);
+    text-shadow: -2px 0 #ff003c;
+  }
+  96% {
+    transform: translateX(-1px);
+    text-shadow: none;
+  }
+  98% {
+    transform: translateX(0);
+  }
+}
+
+.errorLabel {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-primary-grey);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.errorLabel::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1px;
+  background: var(--color-primary-grey);
+}
+
+/* Blinking cursor */
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1rem;
+  background: var(--color-limegreen);
+  vertical-align: middle;
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Progress bar */
+.progressWrap {
+  margin: 1.5rem 0;
+  border: 1px solid #222;
+  height: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--color-limegreen);
+  width: 0%;
+  animation: load 3s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  60% {
+    width: 73%;
+  }
+  61% {
+    width: 71%;
+  }
+  80% {
+    width: 89%;
+  }
+  81% {
+    width: 87%;
+  }
+  99% {
+    width: 99%;
+  }
+  100% {
+    width: 34%;
+  }
+}
+
+.progressLabel {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: var(--color-primary-grey);
+  margin-top: 0.4rem;
+}
+
+/* Home button */
+.homeBtn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background: var(--color-limegreen);
+  color: var(--color-black);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.15s;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% 100%,
+    10px 100%,
+    0 calc(100% - 10px)
+  );
+}
+
+.homeBtn:hover {
+  background: var(--color-off-white);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--color-limegreen);
+}
+
+/* Footer sig */
+.sig {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* Fade in */
+.terminal {
+  animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

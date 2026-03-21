@@ -1,20 +1,13 @@
-import Hero from "./components/Hero/Hero";
-import Nav from "./components/Nav/Nav";
-import Skills from "./components/Skills/Skills";
-import Work from "./components/Work/Work";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Error from "./pages/Error/Error";
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <Hero />
-      <Work />
-      <Skills />
-      <Contact />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/error" element={<Error />} />
+    </Routes>
   );
 }
 
