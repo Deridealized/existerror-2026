@@ -1,0 +1,28 @@
+.homeBtn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background: var(--color-limegreen);
+  color: var(--color-black);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.15s;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% 100%,
+    10px 100%,
+    0 calc(100% - 10px)
+  );
+}
+
+.homeBtn:hover {
+  background: var(--color-off-white);
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--color-limegreen);
+}
