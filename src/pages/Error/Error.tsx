@@ -21,15 +21,15 @@ const Error = () => {
           </div>
 
           <span className={s.line + " " + s.gap}></span>
-          <div className={s.line + " " + s.command}>locate page --path="%URL%"</div>
+          <div className={s.line + " " + s.command}>
+            locate page --path="%URL%"
+          </div>
           <div className={s.line + " " + s.error}>
             ERR: Resource does not exist in this reality.
           </div>
           <span className={s.line + " " + s.gap}></span>
           <div className={s.line + " " + s.command}>diagnose --verbose</div>
-          <div className={s.line}>
-            Scanning known dimensions.....
-          </div>
+          <div className={s.line}>Scanning known dimensions.....</div>
           <div className={s.line + " " + s.error}>
             FATAL: Page consumed by the system. No survivors.
           </div>
@@ -39,7 +39,7 @@ const Error = () => {
             <div className={s.progressBar}></div>
           </div>
           <div className={s.progressLabel}>
-            Recovery attempt: indefinitely stalled
+            Recovery attempt: stalled
             <span className={s.cursor}></span>
           </div>
 
