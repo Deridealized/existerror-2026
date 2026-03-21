@@ -98,3 +98,8 @@
 .clickableImage {
   cursor: zoom-in;
 }
+
+.clickableImage:hover {
+  filter: brightness(1.2);
+  transition: all 0.2s;
+}
