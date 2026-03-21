@@ -1,6 +1,11 @@
 //import dftsTitle from "../../assets/images/DFTS/DFTS_V1full.png";
 //import achievement from "../../assets/images/DFTS/AchievementIcon_01.png";
 import screenshot1 from "../../assets/Images/DFTS/20250409103753_1.jpg";
+import screenshot2 from "../../assets/Images/DFTS/20250409104411_1.jpg";
+import screenshot3 from "../../assets/Images/DFTS/20250409103528_1.jpg";
+import screenshot4 from "../../assets/Images/DFTS/20250409104414_1.jpg";
+import screenshot5 from "../../assets/Images/DFTS/20250409105029_1.jpg";
+
 import corpay from "../../assets/Images/Generic/corpay_01.png";
 //import steam from "../../assets/Images/Generic/steam.png";
 import portfolio from "../../assets/Images/Generic/portfolio-01.png";
@@ -13,7 +18,7 @@ type Project = {
   stack: string[];
   link: string;
   featured: boolean;
-  image: string;
+  images: string[];
   subtitle: string;
   linkIcon?: string;
   badgeText?: string;
@@ -46,7 +51,7 @@ export const projects: Project[] = [
     ],
     link: "https://store.steampowered.com/app/3579390/Dont_Forget_to_Smile/",
     featured: true,
-    image: screenshot1,
+    images: [screenshot1, screenshot2, screenshot3, screenshot4, screenshot5],
     linkIcon: "",
     badgeText: "Steam Release",
     extraCredit: {
@@ -79,7 +84,7 @@ export const projects: Project[] = [
     ],
     link: "#",
     featured: false,
-    image: corpay,
+    images: [corpay],
     badgeText: "In Production",
   },
   {
@@ -91,7 +96,7 @@ export const projects: Project[] = [
     stack: ["Unity", "C#", "Blender", "Adobe Suite", "FL Studio"],
     link: "",
     featured: false,
-    image: dfts2,
+    images: [dfts2],
     badgeText: "In Development",
   },
   {
@@ -112,7 +117,7 @@ export const projects: Project[] = [
     ],
     link: "",
     featured: false,
-    image: portfolio,
+    images: [portfolio],
     linkIcon: "",
   },
 ];

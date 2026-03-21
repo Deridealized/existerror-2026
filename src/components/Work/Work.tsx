@@ -24,7 +24,7 @@ const Work = () => {
               stack={project.stack}
               link={project.link}
               featured={project.featured}
-              image={project.image}
+              images={project.images}
               linkIcon={project.linkIcon}
               badgeText={project.badgeText}
               extraCredit={project.extraCredit}

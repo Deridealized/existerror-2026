@@ -1,5 +1,6 @@
 import type { ExtraCredit } from "../projects";
 import s from "./ProjectCard.module.css";
+import ProjectCardCarousel from "./ProjectCardCarousel";
 
 export interface ProjectCardProps {
   type: string;
@@ -8,7 +9,7 @@ export interface ProjectCardProps {
   stack: string[];
   link: string;
   featured: boolean;
-  image: string;
+  images: string[];
   subtitle: string;
   linkIcon?: string;
   badgeText?: string;
@@ -22,7 +23,7 @@ const ProjectCard = ({
   stack,
   link,
   featured,
-  image,
+  images,
   subtitle,
   linkIcon,
   badgeText,
@@ -59,12 +60,8 @@ const ProjectCard = ({
           )}
         </div>
       </div>
-      <div className={featured ? s.featuredVisual : ""}>
-        <img
-          src={image}
-          alt={`${projectName} screenshot`}
-          className={s.projectImage}
-        />
+      <div>
+        <ProjectCardCarousel images={images} />
       </div>
       <a
         href={link}
