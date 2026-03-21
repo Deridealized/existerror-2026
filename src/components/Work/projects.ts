@@ -81,7 +81,8 @@ export const projects: Project[] = [
     subtitle: "Classified",
     description: `I've been with Corpay for 3 years. After passing my apprenticeship, I joined the team on building a secure client portal.
       Initially upgrading a dated system from Hugo to React, we now maintain and enhance the portal, ensuring it meets the needs of our clients and stakeholders.
-      Adhering to financial industry standards, using C# microservices and API's, hasura data layer, AWS infrastructure, and agile methodologies.
+      Adhering to financial industry standards, serving over 100,000 users, using C# microservices and API's, hasura data layer, AWS infrastructure, and agile methodologies. A key feature that 
+      I implemented was the sidebar navigation, replacing the dated horizontal nav and improved user experience and site scalability.
       It's not classified, but it's proprietary, so I can't share more. Just know it's a big deal.`,
     stack: [
       "React",

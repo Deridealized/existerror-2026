@@ -12,7 +12,7 @@ export const heroTiles = [
     statLabel: "Steam Release",
   },
   {
-    stat: "0%",
-    statLabel: "Test Coverage",
+    stat: "∞",
+    statLabel: "Projects Started",
   },
 ];
