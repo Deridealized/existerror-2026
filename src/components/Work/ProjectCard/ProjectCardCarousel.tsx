@@ -1,5 +1,6 @@
 import { useState } from "react";
 import s from "./ProjectCardCarousel.module.css";
+import { createPortal } from "react-dom";
 
 interface ProjectCardCarouselProps {
   images: string[];
@@ -7,6 +8,7 @@ interface ProjectCardCarouselProps {
 
 const ProjectCardCarousel = ({ images }: ProjectCardCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const prev = () =>
     setCurrentIndex((i) => (i === 0 ? images.length - 1 : i - 1));
@@ -15,10 +17,22 @@ const ProjectCardCarousel = ({ images }: ProjectCardCarouselProps) => {
 
   return (
     <div className={s.carousel}>
+      {lightboxOpen &&
+        createPortal(
+          <div className={s.lightbox} onClick={() => setLightboxOpen(false)}>
+            <img
+              src={images[currentIndex]}
+              alt={`screenshot ${currentIndex + 1}`}
+            />
+          </div>,
+          document.body,
+        )}
       <div className={s.imageScroller}>
         <img
           src={images[currentIndex]}
           alt={`screenshot ${currentIndex + 1}`}
+          onClick={() => setLightboxOpen(true)}
+          className={s.clickableImage}
         />
 
         {images.length > 1 && (

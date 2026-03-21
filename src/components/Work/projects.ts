@@ -5,6 +5,11 @@ import screenshot2 from "../../assets/Images/DFTS/20250409104411_1.jpg";
 import screenshot3 from "../../assets/Images/DFTS/20250409103528_1.jpg";
 import screenshot4 from "../../assets/Images/DFTS/20250409104414_1.jpg";
 import screenshot5 from "../../assets/Images/DFTS/20250409105029_1.jpg";
+import screenshot6 from "../../assets/Images/DFTS/screenshotBoss_01.jpg";
+import screenshot7 from "../../assets/Images/DFTS/screenshotUI_01.jpg";
+import screenshot8 from "../../assets/Images/DFTS/screenshotUI_02.jpg";
+import screenshot9 from "../../assets/Images/DFTS/screenshotUI_03.jpg";
+import screenshot10 from "../../assets/Images/DFTS/screenshotUI_04.jpg";
 
 import corpay from "../../assets/Images/Generic/corpay_01.png";
 //import steam from "../../assets/Images/Generic/steam.png";
@@ -51,7 +56,18 @@ export const projects: Project[] = [
     ],
     link: "https://store.steampowered.com/app/3579390/Dont_Forget_to_Smile/",
     featured: true,
-    images: [screenshot1, screenshot2, screenshot3, screenshot4, screenshot5],
+    images: [
+      screenshot1,
+      screenshot2,
+      screenshot3,
+      screenshot4,
+      screenshot5,
+      screenshot6,
+      screenshot7,
+      screenshot8,
+      screenshot9,
+      screenshot10,
+    ],
     linkIcon: "",
     badgeText: "Steam Release",
     extraCredit: {
