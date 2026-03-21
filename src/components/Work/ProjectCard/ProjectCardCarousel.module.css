@@ -1,6 +1,14 @@
 .imageScroller {
   width: 100%;
   position: relative;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 50px) 0,
+    100% 50px,
+    100% 100%,
+    50px 100%,
+    0 calc(100% - 50px)
+  );
 }
 
 .imageScroller img {
