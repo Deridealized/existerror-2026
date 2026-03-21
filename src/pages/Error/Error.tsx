@@ -3,8 +3,6 @@ import s from "./Error.module.css";
 const Error = () => {
   return (
     <div>
-      <div className={s.bgText}>404</div>
-
       <div className={s.terminal}>
         <div className={s.terminalBar}>
           <div className={s.terminalDot}></div>
@@ -22,16 +20,18 @@ const Error = () => {
 
           <span className={s.line + " " + s.gap}></span>
           <div className={s.line + " " + s.command}>
-            locate page --path="%URL%"
+            locate page --path="%UNKNOWN PATH SPECIFIED%"
           </div>
           <div className={s.line + " " + s.error}>
-            ERR: Resource does not exist in this reality.
+            ERR: Resource does not exist at this location.
           </div>
           <span className={s.line + " " + s.gap}></span>
-          <div className={s.line + " " + s.command}>diagnose --verbose</div>
-          <div className={s.line}>Scanning known dimensions.....</div>
+          <div className={s.line + " " + s.command}>
+            diagnosis --system-broken
+          </div>
+          <div className={s.line}>Scanning known redirects.....</div>
           <div className={s.line + " " + s.error}>
-            FATAL: Page consumed by the system. No survivors.
+            FATAL: Page does not exist.
           </div>
           <span className={s.line + " " + s.gap}></span>
 
@@ -39,7 +39,7 @@ const Error = () => {
             <div className={s.progressBar}></div>
           </div>
           <div className={s.progressLabel}>
-            Recovery attempt: stalled
+            Recovery attempt: failed
             <span className={s.cursor}></span>
           </div>
 
@@ -49,7 +49,7 @@ const Error = () => {
           </div>
 
           <a href="/" className={s.homeBtn}>
-            ← Return to safety
+            ← Return to safety - there's nothing for you here.
           </a>
         </div>
       </div>
