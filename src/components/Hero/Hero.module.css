@@ -333,20 +333,37 @@ h1:hover .nameLineA {
   animation-delay: 0.7s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hero {
     grid-template-columns: 1fr;
-    padding: 7rem 1.5rem 3rem;
+    grid-template-rows: auto auto auto;
+    padding: 8rem 2rem 4rem;
   }
   .heroRight {
     grid-column: 1;
     grid-row: 2;
     align-items: flex-start;
   }
+  .heroBottom {
+    grid-row: 3;
+  }
+  .statusBlock {
+    width: 100%;
+    max-width: 360px;
+  }
+  .scrollHint {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 7rem 1.5rem 3rem;
+  }
   .heroBgText {
     font-size: 35vw;
   }
-  .heroBottom {
-    grid-row: 3;
+  .heroStats {
+    gap: 1.5rem;
   }
 }

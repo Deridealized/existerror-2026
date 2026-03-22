@@ -1,11 +1,12 @@
 .skillsLayout {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  width: 80%;
   gap: 4rem;
-  align-items: start;
 }
 
 .skillsIntro {
+  flex: 1;
+  min-width: 0;
   font-size: 0.85rem;
   color: var(--color-primary-grey);
   line-height: 1.9;
@@ -17,6 +18,8 @@
 }
 
 .skillsCategories {
+  flex: 2;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -87,6 +90,18 @@ section {
 
 @media (max-width: 768px) {
   .skillsLayout {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+  }
+  .skillList {
+    justify-content: center;
+    align-items: center;
+  }
+  .sectionTitle {
+    text-align: center;
+  }
+  .skillsCategories {
+    text-align: center;
   }
 }

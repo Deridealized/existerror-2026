@@ -1,9 +1,12 @@
 .skillsLayout {
   display: flex;
   width: 100%;
+  gap: 4rem;
 }
 
 .skillsIntro {
+  flex: 1;
+  min-width: 0;
   font-size: 0.85rem;
   color: var(--color-primary-grey);
   line-height: 1.9;
@@ -15,6 +18,8 @@
 }
 
 .skillsCategories {
+  flex: 2;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -81,4 +86,11 @@ section {
 .sectionTitle em {
   color: var(--color-limegreen);
   font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .skillsLayout {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }

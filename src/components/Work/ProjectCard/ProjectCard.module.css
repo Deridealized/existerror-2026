@@ -165,4 +165,8 @@
     grid-column: 1;
     grid-template-columns: 1fr;
   }
+
+  .projectCard {
+    padding: 2rem 0rem;
+  }
 }
