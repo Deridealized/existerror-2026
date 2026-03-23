@@ -4,3 +4,14 @@ Framer Motion page transitions
 Case study pages for projects
 CV download button
 
+Interactive DFTS experience
+
+GitHub activity feed — Needs Vercel serverless function.
+
+Blog/devlog — markdown powered, write about building DFTS and the portfolio.
+
+Theme switcher — Dystopian (current) and Corporate (ironic clean white).
+
+Tech stack visualisation — D3.js force graph or radar chart of skills.
+
+Steam API stats — live review scores and playtime on the DFTS card.
