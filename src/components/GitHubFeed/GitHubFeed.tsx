@@ -8,7 +8,7 @@ const GitHubFeed = () => {
     <div className={s.gitFeed}>
       <p>Recent GitHub Activity</p>
       {loading && <p>Loading...</p>}
-      {error && <p className={s.error}>GitHub Signal Lost</p>}
+      {error && <p className={s.error}>GitHub Signal Lost...</p>}
       {commits.map((commit) => (
         <div key={commit.sha} className={s.commitContainer}>
           <a

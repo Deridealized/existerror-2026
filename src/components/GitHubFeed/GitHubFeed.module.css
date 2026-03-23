@@ -13,6 +13,7 @@ p {
 }
 
 .error {
+  font-style: italic;
   color: var(--color-red);
 }
 
