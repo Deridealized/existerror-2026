@@ -15,7 +15,6 @@ const Home = () => {
       <Hero />
       <div className={s.widgetRowA}>
         <GitHubFeed />
-        <GitHubFeed />
       </div>
       <Work />
       <Skills />
