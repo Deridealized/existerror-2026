@@ -1,0 +1,33 @@
+.gitFeed {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--color-primary-grey);
+  width: fit-content;
+}
+
+p {
+  font-size: 0.75rem;
+  padding: 0.8rem;
+  color: var(--color-primary-grey);
+}
+
+.commitContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  margin: 0rem 1.2rem;
+}
+
+.commit {
+  font-weight: bold;
+  color: var(--color-limegreen);
+}
+
+.author {
+  font-style: italic;
+}
+
+.link {
+  color: var(--color--off-white);
+}
