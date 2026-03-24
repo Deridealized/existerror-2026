@@ -7,8 +7,8 @@
 }
 
 body {
-  background: var(--color-black);
-  color: var(--color-off-white);
+  background: var(--color-background);
+  color: var(--color-text);
   font-family: "Share Tech Mono", monospace;
   min-height: 100vh;
   display: flex;
@@ -61,12 +61,12 @@ body {
 }
 
 .line.command {
-  color: var(--color-off-white);
+  color: var(--color-text);
 }
 
 .line.command::before {
   content: "> ";
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
 }
 
 .line.error {
@@ -74,7 +74,7 @@ body {
 }
 
 .line.warning {
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
 }
 
 .line.gap {
@@ -85,14 +85,14 @@ body {
 .errorCode {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(3rem, 10vw, 6rem);
-  color: var(--color-off-white);
+  color: var(--color-text);
   line-height: 1;
   margin: 1.5rem 0 0.5rem;
   animation: glitch 4s steps(1) infinite;
 }
 
 .errorCode span {
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
 }
 
 @keyframes glitch {
@@ -104,7 +104,7 @@ body {
   }
   92% {
     transform: translateX(-3px);
-    text-shadow: 2px 0 var(--color-limegreen);
+    text-shadow: 2px 0 var(--color-primary-main);
   }
   94% {
     transform: translateX(3px);
@@ -142,7 +142,7 @@ body {
   display: inline-block;
   width: 8px;
   height: 1rem;
-  background: var(--color-limegreen);
+  background: var(--color-primary-main);
   vertical-align: middle;
   margin-left: 2px;
   animation: blink 1s steps(1) infinite;
@@ -168,7 +168,7 @@ body {
 
 .progressBar {
   height: 100%;
-  background: var(--color-limegreen);
+  background: var(--color-primary-main);
   width: 0%;
   animation: load 3s ease infinite;
   animation-delay: 0.5s;
@@ -209,8 +209,8 @@ body {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.75rem 2rem;
-  background: var(--color-limegreen);
-  color: var(--color-black);
+  background: var(--color-primary-main);
+  color: var(--color-background);
   font-family: "Share Tech Mono", monospace;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
@@ -229,9 +229,9 @@ body {
 }
 
 .homeBtn:hover {
-  background: var(--color-off-white);
+  background: var(--color-text);
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--color-limegreen);
+  box-shadow: 4px 4px 0 var(--color-primary-main);
 }
 
 .sig {

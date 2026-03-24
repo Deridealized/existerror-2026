@@ -1,5 +1,6 @@
 import s from "./Nav.module.css";
 import existerrorOrangeLogo from "../../assets/Images/Generic/keyhole_orange_bg.png";
+import Toggle from "../Toggle/Toggle";
 
 const Nav = () => {
   return (
@@ -21,6 +22,9 @@ const Nav = () => {
         </li>
         <li>
           <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <Toggle />
         </li>
       </ul>
     </nav>

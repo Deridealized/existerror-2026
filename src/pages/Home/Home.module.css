@@ -18,7 +18,7 @@
 .homeNum {
   font-size: 0.65rem;
   letter-spacing: 0.2em;
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
 }
 
 .homeTitle {
@@ -29,7 +29,7 @@
 }
 
 .homeTitle em {
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
   font-style: normal;
 }
 

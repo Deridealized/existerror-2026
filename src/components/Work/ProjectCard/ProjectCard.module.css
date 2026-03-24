@@ -1,5 +1,5 @@
 .projectCard {
-  background: var(--color-black);
+  background: var(--color-background);
   padding: 2.5rem;
   position: relative;
   overflow: hidden;
@@ -7,7 +7,7 @@
 }
 
 .projectCard:hover {
-  background: #111;
+  background: var(--color-lightbackground);
 }
 
 .projectCard::after {
@@ -17,7 +17,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--color-limegreen);
+  background: var(--color-primary-main);
   transition: width 0.3s ease;
 }
 
@@ -31,7 +31,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
   margin-bottom: 1rem;
 }
 
@@ -45,7 +45,7 @@
 
 .projectSubtitle {
   font-size: 0.75rem;
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -95,7 +95,7 @@
 }
 
 .projectCard:hover .projectArrow {
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
   transform: translate(3px, -3px);
 }
 
@@ -115,8 +115,8 @@
 
 .featuredBadge {
   display: inline-block;
-  background: var(--color-limegreen);
-  color: var(--color-black);
+  background: var(--color-primary-main);
+  color: var(--color-background);
   font-size: 0.55rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;

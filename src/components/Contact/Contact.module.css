@@ -20,7 +20,7 @@
 }
 
 .contactHeading span {
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
   display: block;
 }
 
@@ -45,7 +45,7 @@
   padding: 1.25rem 1.5rem;
   border: 1px solid #1e1e1e;
   text-decoration: none;
-  color: var(--color-off-white);
+  color: var(--color-text);
   transition: all 0.2s;
   position: relative;
   overflow: hidden;
@@ -55,7 +55,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--color-limegreen);
+  background: var(--color-primary-main);
   transform: translateX(-101%);
   transition: transform 0.25s ease;
   z-index: 0;
@@ -66,8 +66,8 @@
 }
 
 .contactLink:hover {
-  color: var(--color-black);
-  border-color: var(--color-limegreen);
+  color: var(--color-background);
+  border-color: var(--color-primary-main);
 }
 
 .contactLinkContent {
@@ -105,8 +105,8 @@
   display: inline-block;
   padding: 0.75rem 2rem;
   background: transparent;
-  color: var(--color-limegreen);
-  border: 1px solid var(--color-limegreenalpha);
+  color: var(--color-primary-main);
+  border: 1px solid var(--color-primary-mainalpha);
   font-family: "Share Tech Mono", monospace;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
@@ -116,8 +116,8 @@
 }
 
 .btnOutline:hover {
-  background: var(--color-limegreen);
-  color: var(--color-black);
+  background: var(--color-primary-main);
+  color: var(--color-background);
   transform: translate(-2px, -2px);
   box-shadow: 4px 4px 0 var(--color-primary-grey);
 }
