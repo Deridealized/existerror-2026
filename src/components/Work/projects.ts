@@ -81,8 +81,9 @@ export const projects: Project[] = [
     subtitle: "Classified",
     description: `I've been with Corpay for 3 years. After passing my apprenticeship, I joined the team on building a secure client portal.
       Initially upgrading a dated system from Hugo to React, we now maintain and enhance the portal, ensuring it meets the needs of our clients and stakeholders.
-      Adhering to financial industry standards, serving over 100,000 users, using C# microservices and API's, hasura data layer, AWS infrastructure, and agile methodologies. A key feature that 
-      I implemented was the sidebar navigation, replacing the dated horizontal nav and improved user experience and site scalability.
+      
+      Adhering to financial industry standards, serving over 100,000 users, using C# microservices and API's, hasura data layer, AWS infrastructure, and agile methodologies. A key feature that I implemented was the sidebar navigation, replacing the dated horizontal nav and improved user experience and site scalability.
+      
       It's not classified, but it's proprietary, so I can't share more. Just know it's a big deal.`,
     stack: [
       "React",
@@ -121,8 +122,8 @@ export const projects: Project[] = [
     projectName: "This Portfolio",
     subtitle: "",
     description: `React frontend with TypeScript, built from scratch. I wanted to create a personal portfolio that showcased my work and skills in a brutalist and distinctive way.
-    It is also a playground for me to experiment with new technologies and design trends, 
-    while also being a reflection of my personal brand and style. The design is minimalistic and inkeeping with the themes and aesthetics of my game projects.`,
+    
+    It is also a playground for me to experiment with new technologies and design trends, while also being a reflection of my personal brand and style. The design is minimalistic and inkeeping with the themes and aesthetics of my game projects.`,
     stack: [
       "React",
       "TypeScript",
@@ -135,6 +136,22 @@ export const projects: Project[] = [
     link: "",
     featured: false,
     images: [portfolio],
+    linkIcon: "",
+  },
+  {
+    projectType: "Notes",
+    projectName: "Planned for this site",
+    subtitle: "",
+    description: `• Framer Motion page transitions
+                  • Case study pages for projects
+                  • Interactive DFTS experience
+                  • GitHub activity feed: add Vercel serverless function.
+                  • Blog/devlog — markdown powered, write about building DFTS and the portfolio.                  
+                  • Steam API stats — live review scores and playtime on the DFTS card.`,
+    stack: [],
+    link: "",
+    featured: false,
+    images: [],
     linkIcon: "",
   },
 ];
