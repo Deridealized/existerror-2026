@@ -14,7 +14,7 @@ p {
 
 .error {
   font-style: italic;
-  color: var(--color-red);
+  color: var(--color-error);
 }
 
 .commitContainer {
@@ -27,7 +27,7 @@ p {
 
 .commit {
   font-weight: bold;
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
 }
 
 .author {

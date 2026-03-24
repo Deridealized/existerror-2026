@@ -35,7 +35,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@
   display: inline-block;
   width: 2rem;
   height: 1px;
-  background: var(--color-limegreen);
+  background: var(--color-primary-main);
 }
 
 h1 {
@@ -98,7 +98,7 @@ h1:hover .nameLineA {
   }
   25% {
     transform: translateX(-3px);
-    text-shadow: 2px 0 var(--color-limegreen);
+    text-shadow: 2px 0 var(--color-primary-main);
   }
   50% {
     transform: translateX(3px);
@@ -113,11 +113,11 @@ h1:hover .nameLineA {
 }
 
 .nameLineA {
-  color: var(--color-off-white);
+  color: var(--color-text);
   display: block;
 }
 .nameLineB {
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
   display: block;
 }
 
@@ -141,8 +141,8 @@ h1:hover .nameLineA {
 .btnPrimary {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background: var(--color-limegreen);
-  color: var(--color-black);
+  background: var(--color-primary-main);
+  color: var(--color-background);
   font-family: "Share Tech Mono", monospace;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
@@ -162,17 +162,17 @@ h1:hover .nameLineA {
 }
 
 .btnPrimary:hover {
-  background: var(--color-off-white);
+  background: var(--color-text);
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--color-limegreen);
+  box-shadow: 4px 4px 0 var(--color-primary-main);
 }
 
 .btnOutline {
   display: inline-block;
   padding: 0.75rem 2rem;
   background: transparent;
-  color: var(--color-limegreen);
-  border: 1px solid var(--color-limegreenalpha);
+  color: var(--color-primary-main);
+  border: 1px solid var(--color-primary-mainalpha);
   font-family: "Share Tech Mono", monospace;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
@@ -182,8 +182,8 @@ h1:hover .nameLineA {
 }
 
 .btnOutline:hover {
-  background: var(--color-off-white);
-  color: var(--color-black);
+  background: var(--color-text);
+  color: var(--color-background);
   transform: translate(-2px, -2px);
 
   clip-path: polygon(
@@ -206,7 +206,7 @@ h1:hover .nameLineA {
 }
 
 .btnSecondary:hover {
-  color: var(--color-off-white);
+  color: var(--color-text);
 }
 
 .heroRight {
@@ -232,19 +232,19 @@ h1:hover .nameLineA {
   position: absolute;
   top: -0.5rem;
   left: 1rem;
-  background: var(--color-black);
+  background: var(--color-background);
   padding: 0 0.5rem;
   font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-limegreen);
+  color: var(--color-primary-main);
 }
 
 .statusValue {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.05em;
-  color: var(--color-off-white);
+  color: var(--color-text);
 }
 
 .statusSub {
@@ -259,7 +259,7 @@ h1:hover .nameLineA {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-limegreen);
+  background: var(--color-primary-main);
   margin-right: 0.5rem;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -297,7 +297,7 @@ h1:hover .nameLineA {
 .statNum {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
-  color: var(--color-off-white);
+  color: var(--color-text);
   line-height: 1;
 }
 .statLabel {

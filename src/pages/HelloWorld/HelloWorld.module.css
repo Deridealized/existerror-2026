@@ -2,8 +2,8 @@
   display: inline-block;
   margin-top: 2rem;
   padding: 0.75rem 2rem;
-  background: var(--color-limegreen);
-  color: var(--color-black);
+  background: var(--color-primary-main);
+  color: var(--color-background);
   font-family: "Share Tech Mono", monospace;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
@@ -22,7 +22,7 @@
 }
 
 .homeBtn:hover {
-  background: var(--color-off-white);
+  background: var(--color-text);
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--color-limegreen);
+  box-shadow: 4px 4px 0 var(--color-primary-main);
 }

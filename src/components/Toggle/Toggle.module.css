@@ -1,0 +1,16 @@
+.toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-primary-grey);
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.toggle:hover {
+  color: var(--color-primary-main);
+}

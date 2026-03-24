@@ -1,11 +1,11 @@
 import * as d3 from "d3";
 import s from "./SkillsBubble.module.css";
+import { useTheme } from "../../context/ThemeContext";
 
 const sizeScale = d3.scaleSqrt().domain([1, 5]).range([30, 70]);
-const colorScale = d3
-  .scaleLinear<string>()
-  .domain([1, 5])
-  .range(["#2a3800", "#c8f000"]);
+
+const getCSSVar = (name: string) =>
+  getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
 interface SkillBubbleProps {
   name: string;
@@ -15,8 +15,22 @@ interface SkillBubbleProps {
 }
 
 const SkillsBubble = ({ name, level, x, y }: SkillBubbleProps) => {
+  const { theme } = useTheme();
+
+  const colorScale = d3
+    .scaleLinear<string>()
+    .domain([1, 5])
+    .range([
+      theme === "dark" ? "#2a3800" : "#d4e87a",
+      getCSSVar("--color-primary-main"),
+    ]);
+
   const size = sizeScale(level);
   const color = colorScale(level);
+  const textColor =
+    level >= 3
+      ? getCSSVar("--color-background")
+      : getCSSVar("--color-primary-main");
 
   return (
     <div
@@ -27,7 +41,7 @@ const SkillsBubble = ({ name, level, x, y }: SkillBubbleProps) => {
         width: size,
         height: size,
         background: color,
-        color: level >= 3 ? "#0a0a0a" : "#c8f000",
+        color: textColor,
       }}
     >
       {name}
