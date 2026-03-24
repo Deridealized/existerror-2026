@@ -30,6 +30,9 @@ const Contact = () => {
               <span className={s.contactLinkArrow}>↗</span>
             </a>
           ))}
+          <a href="/cv.pdf" download className={s.btnOutline}>
+            Download CV ↓
+          </a>
         </div>
       </div>
     </div>

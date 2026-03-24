@@ -23,6 +23,9 @@ const Hero = () => {
           <a href="#work" className={s.btnPrimary}>
             View Work
           </a>
+          <a href="/cv.pdf" download className={s.btnOutline}>
+            Download CV ↓
+          </a>
           <a href="#contact" className={s.btnSecondary}>
             Get in touch →
           </a>
