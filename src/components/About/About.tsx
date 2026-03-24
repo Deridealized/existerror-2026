@@ -5,7 +5,7 @@ const About = () => {
     <>
       <section id="skills">
         <div className={s.sectionHeader}>
-          <span className={s.sectionNum}>02 /</span>
+          <span className={s.sectionNum}>03 /</span>
           <h2 className={s.sectionTitle}>
             Who <em>am I?</em>
           </h2>
