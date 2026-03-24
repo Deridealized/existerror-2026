@@ -2,8 +2,6 @@ Framer Motion page transitions
 
 Case study pages for projects
 
-CV download button
-
 Interactive DFTS experience
 
 GitHub activity feed — Needs Vercel serverless function.
