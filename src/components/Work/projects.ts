@@ -139,6 +139,23 @@ export const projects: Project[] = [
     linkIcon: "",
   },
   {
+    projectType: "Thoughts",
+    projectName: "AI & The Creative Industry",
+    subtitle: "",
+    description: `I'm pro-AI as a tool, but I think the conversation needs more nuance than it usually gets.
+
+Code generation doesn't bother me — code is a language, a means to an end. Using Claude or Copilot to write boilerplate or work through a problem is no different to using Stack Overflow or reading docs. The craft is still in the decisions you make.
+
+AI imagery is a different story. Visual art is expression — it carries intention, culture, and hours of a person's life. Generated images flatten that into pattern recognition. Useful in some contexts, but let's not pretend it's the same thing.
+
+In practice: I use Claude Code and Copilot for administrative and repetitive tasks, and this portfolio is an active experiment in what Claude Code can do as a collaborative engineering tool. I write the vision, it helps execute. The line of authorship stays clear.`,
+    stack: [],
+    link: "",
+    featured: false,
+    images: [],
+    linkIcon: "",
+  },
+  {
     projectType: "Notes",
     projectName: "Planned for this site",
     subtitle: "",
