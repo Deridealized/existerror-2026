@@ -1,10 +1,13 @@
 import s from "./Hero.module.css";
 import { heroTiles } from "./heroTileInfo.ts";
+import ClockWeather from "./ClockWeather";
 
 const Hero = () => {
   return (
     <div className={s.hero}>
       <div className={s.heroBgText}>BOTH</div>
+
+      <ClockWeather />
 
       <div className={s.heroMain}>
         <div className={s.heroTag + " " + s.fadeUp}>Engineer. Designer.</div>
