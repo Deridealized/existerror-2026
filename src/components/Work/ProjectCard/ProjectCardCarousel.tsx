@@ -15,6 +15,8 @@ const ProjectCardCarousel = ({ images }: ProjectCardCarouselProps) => {
   const next = () =>
     setCurrentIndex((i) => (i === images.length - 1 ? 0 : i + 1));
 
+  if (images.length === 0) return null;
+
   return (
     <div className={s.carousel}>
       {lightboxOpen &&
