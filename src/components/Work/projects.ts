@@ -144,7 +144,7 @@ export const projects: Project[] = [
     subtitle: "",
     description: `I'm pro-AI as a tool, but I think the conversation needs more nuance than it usually gets.
 
-              Code generation doesn't bother me - code is a language, a means to an end. Using an LLM to write boilerplate or work through a problem is no different to using Stack Overflow or reading docs. The craft is still in the decisions you make and the small tweaks that someone unqualified would not know to make.
+              Code generation doesn't bother me - code is a language, a means to an end. Using an LLM to write boilerplate or work through a problem is no different to using Stack Overflow or reading docs. The craft is still in the decisions you make and the small tweaks that someone unqualified would not know to make. Imagine, "Check this function as output X should be Y, I think it's reason X, please debug", vs "My app isn't working fix it".
 
               AI imagery is a different story. Visual art is expression - it carries intention, culture, and hours of a person's life. Generated images flatten that into pattern recognition. Useful in some contexts, and funny in others, but let's not pretend it's the same thing. It's also a terrifying reality we will all come to face in the realm of politics and scandals.
 
