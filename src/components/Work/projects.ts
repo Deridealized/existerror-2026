@@ -37,7 +37,7 @@ export type ExtraCredit = {
 
 export const projects: Project[] = [
   {
-    projectType: "Game Development — Unity / C#",
+    projectType: "Game Development - Unity / C#",
     projectName: "Don't Forget to Smile",
     subtitle: "existerror digital",
     description: `A bullet-heaven survivors-like about breaking free in a post-capitalist, dystopian world. Feels a little too close to home.         
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     },
   },
   {
-    projectType: "Professional Work — React / TypeScript",
+    projectType: "Professional Work - React / TypeScript",
     projectName: "Client Portal",
     subtitle: "Classified",
     description: `I've been with Corpay for 3 years. After passing my apprenticeship, I joined the team on building a secure client portal.
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     badgeText: "In Production",
   },
   {
-    projectType: "Game Development — Unity / C#",
+    projectType: "Game Development - Unity / C#",
     projectName: "Don't Forget to Smile 2",
     subtitle: "Existerror Digital",
     description: `3D Sequel to Don't Forget to Smile, currently in development.
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     badgeText: "In Development",
   },
   {
-    projectType: "Website — React / TypeScript",
+    projectType: "Website - React / TypeScript",
     projectName: "This Portfolio",
     subtitle: "",
     description: `React frontend with TypeScript, built from scratch. I wanted to create a personal portfolio that showcased my work and skills in a brutalist and distinctive way.
@@ -144,11 +144,27 @@ export const projects: Project[] = [
     subtitle: "",
     description: `I'm pro-AI as a tool, but I think the conversation needs more nuance than it usually gets.
 
-Code generation doesn't bother me — code is a language, a means to an end. Using Claude or Copilot to write boilerplate or work through a problem is no different to using Stack Overflow or reading docs. The craft is still in the decisions you make.
+              Code generation doesn't bother me - code is a language, a means to an end. Using an LLM to write boilerplate or work through a problem is no different to using Stack Overflow or reading docs. The craft is still in the decisions you make and the small tweaks that someone unqualified would not know to make.
 
-AI imagery is a different story. Visual art is expression — it carries intention, culture, and hours of a person's life. Generated images flatten that into pattern recognition. Useful in some contexts, but let's not pretend it's the same thing.
+              AI imagery is a different story. Visual art is expression - it carries intention, culture, and hours of a person's life. Generated images flatten that into pattern recognition. Useful in some contexts, and funny in others, but let's not pretend it's the same thing. It's also a terrifying reality we will all come to face in the realm of politics and scandals.
 
-In practice: I use Claude Code and Copilot for administrative and repetitive tasks, and this portfolio is an active experiment in what Claude Code can do as a collaborative engineering tool. I write the vision, it helps execute. The line of authorship stays clear.`,
+              In practice: I use LLM's for administrative/repetitive tasks and occasionally for debugging a problem that's taking too long - specifically Claude and ChatGPT.
+              
+              This portfolio is an active experiment in what Claude Code can do as a collaborative engineering tool, a dive into the potential future of "AI" assistance.
+              
+              For example, I had Claude generate a template based on my design ideas. I then took that HTML/CSS and turned it into React, with my own styling and a data driven design. I also had to do the majority of the mobile optimization because, well, AI isn't perfect!
+
+              At the other end other end of the spectrum, in testing the capabilities of LLM's, I said "Create me a combined clock and weather component and chuck it into the Hero". It looks cool, but it isn't reusable or scalable in it's base form, having absolute positioning and no real customization options out of the box.
+              
+              Lastly, it seems inevitable! Even in writing this information here, my IDE is constantly suggesting what to use as the copy... in fact, let's see what it suggest below:
+
+              In my IDE it is suggesting
+              //Start of suggestion (literally written by pressing Tab)
+              "I've been using AI tools for a while now, and I've found them to be incredibly helpful in streamlining my workflow and improving my productivity. From generating code snippets to providing insights on complex problems, AI has become an invaluable resource in my work as a developer. However, I also believe that it's important to approach AI with a critical eye and to be mindful of its limitations. While AI can be a powerful tool, it's not a substitute for human creativity and ingenuity. Ultimately, I see AI as a complement to human intelligence, rather than a replacement for it."
+              //End of suggestion
+
+              eh... thoughts?
+              `,
     stack: [],
     link: "",
     featured: false,
@@ -163,8 +179,8 @@ In practice: I use Claude Code and Copilot for administrative and repetitive tas
                   • Case study pages for projects
                   • Interactive DFTS experience
                   • GitHub activity feed: add Vercel serverless function.
-                  • Blog/devlog — markdown powered, write about building DFTS and the portfolio.                  
-                  • Steam API stats — live review scores and playtime on the DFTS card.`,
+                  • Blog/devlog - markdown powered, write about building DFTS and the portfolio.                  
+                  • Steam API stats - live review scores and playtime on the DFTS card.`,
     stack: [],
     link: "",
     featured: false,

@@ -8,7 +8,7 @@ const Error = () => {
           <div className={s.terminalDot}></div>
           <div className={s.terminalDot}></div>
           <div className={s.terminalDot}></div>
-          <div className={s.terminalTitle}>existerror — system.log</div>
+          <div className={s.terminalTitle}>existerror - system.log</div>
         </div>
 
         <div className={s.terminalBody}>
@@ -54,7 +54,7 @@ const Error = () => {
         </div>
       </div>
 
-      <div className={s.sig}>JAMIE HEY — EXISTERROR DIGITAL — MMXXVI</div>
+      <div className={s.sig}>JAMIE HEY - EXISTERROR DIGITAL - MMXXVI</div>
     </div>
   );
 };

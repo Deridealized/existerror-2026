@@ -26,7 +26,7 @@ const Skills = () => {
             </p>
             <br />
             <p>
-              The game dev background isn't a hobby footnote — it's where I
+              The game dev background isn't a hobby footnote - it's where I
               learned that <strong>detail compounds</strong> and{" "}
               <strong>scalability and maintainability</strong> aren't just
               buzzwords.
