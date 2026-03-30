@@ -154,7 +154,7 @@ export const projects: Project[] = [
               
               For example, I had Claude generate a template based on my design ideas. I then took that HTML/CSS and turned it into React, with my own styling and a data driven design. I also had to do the majority of the mobile optimization because, well, AI isn't perfect!
 
-              At the other end other end of the spectrum, in testing the capabilities of LLM's, I said "Create me a combined clock and weather component and chuck it into the Hero". It looks cool, but it isn't reusable or scalable in it's base form, having absolute positioning and no real customization options out of the box.
+              At the other end other end of the spectrum, in testing the capabilities of LLM's, I said "Create me a combined clock and weather component and chuck it into the Hero". It looks cool, but it isn't reusable or scalable in it's base form, having absolute positioning and no real customization options out of the box (I also had to completely disable it for mobile because again, no mobile optimisation out of the box).
               
               Lastly, it seems inevitable! Even in writing this information here, my IDE is constantly suggesting what to use as the copy... in fact, let's see what it suggest below:
 
