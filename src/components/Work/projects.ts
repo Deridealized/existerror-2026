@@ -118,6 +118,17 @@ export const projects: Project[] = [
     badgeText: "In Development",
   },
   {
+    projectType: "Game Development - Unity / C#",
+    projectName: "Untitled Vehicle Tycoon/Simulator",
+    subtitle: "Existerror Digital",
+    description: `Vehicle rental and leasing tycoon game, currently in development. Build your fleet, manage your staff, and expand your business.`,
+    stack: ["Unity", "C#", "Blender", "Adobe Suite", "FL Studio"],
+    link: "",
+    featured: false,
+    images: [],
+    badgeText: "In Development",
+  },
+  {
     projectType: "Website - React / TypeScript",
     projectName: "This Portfolio",
     subtitle: "",

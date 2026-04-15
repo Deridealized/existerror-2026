@@ -61,7 +61,7 @@ body {
 }
 
 /* Scanline overlay */
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -75,7 +75,7 @@ body::before {
   pointer-events: none;
   z-index: 9999;
   opacity: 0.2;
-}
+} */
 
 /* Responsive */
 @media (max-width: 768px) {
