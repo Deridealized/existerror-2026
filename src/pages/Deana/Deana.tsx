@@ -65,17 +65,28 @@ const services = [
 export default function Deana() {
   return (
     <div className="deana-page">
-
       {/* Nav */}
       <nav className="dp-nav">
         <div className="dp-nav-inner">
           <span className="dp-nav-brand">I'm available when you're not</span>
           <ul className="dp-nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#availability">Availability</a></li>
-            <li><a href="#contact" className="dp-nav-cta">Contact</a></li>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#availability">Availability</a>
+            </li>
+            <li>
+              <a href="#contact" className="dp-nav-cta">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -94,8 +105,12 @@ export default function Deana() {
             specialist background in SEN support.
           </p>
           <div className="dp-hero-btns">
-            <a href="#contact" className="dp-btn">Get in touch</a>
-            <a href="#about" className="dp-btn dp-btn-outline">Learn more</a>
+            <a href="#contact" className="dp-btn">
+              Get in touch
+            </a>
+            <a href="#about" className="dp-btn dp-btn-outline">
+              Learn more
+            </a>
           </div>
         </div>
       </section>
@@ -107,6 +122,12 @@ export default function Deana() {
           <div className="dp-about-grid">
             <div className="dp-about-text">
               <h2 className="dp-h2">Hi, I'm Deana</h2>
+              <ul>
+                <li>add in DBS stuff</li>
+                <li>add in first aid stuff</li>
+                <li>add in flat rate for all children stuff</li>
+                <li>add in other information</li>
+              </ul>
               <p>
                 I'm an Austrey resident with a history of looking after children
                 aged 3–16. In the past I have worked primarily with SEN kids,
@@ -164,7 +185,9 @@ export default function Deana() {
             <div className="dp-tt-row dp-tt-header">
               <div className="dp-tt-label" />
               {days.map((d) => (
-                <div key={d} className="dp-tt-day">{d}</div>
+                <div key={d} className="dp-tt-day">
+                  {d}
+                </div>
               ))}
             </div>
             {availability.map((row) => (
@@ -174,7 +197,10 @@ export default function Deana() {
                   <small>{row.sublabel}</small>
                 </div>
                 {row.slots.map((avail, i) => (
-                  <div key={i} className={`dp-tt-cell ${avail ? "dp-tt-yes" : "dp-tt-no"}`}>
+                  <div
+                    key={i}
+                    className={`dp-tt-cell ${avail ? "dp-tt-yes" : "dp-tt-no"}`}
+                  >
                     {avail ? "✓" : "–"}
                   </div>
                 ))}
@@ -224,7 +250,6 @@ export default function Deana() {
           <a href="tel:07709824569">07709 824 569</a>
         </p>
       </footer>
-
     </div>
   );
 }
