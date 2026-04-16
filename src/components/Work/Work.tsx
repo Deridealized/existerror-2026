@@ -38,31 +38,33 @@ const Work = () => {
             </button>
           ))}
         </div>
-        <br />
-        <div className={s.vfxLabel}>
-          Hover (or tap on mobile) for more information!
-        </div>
-        <br />
 
         {activeCategory === "vfx" ? (
-          <div className={s.vfxGrid}>
-            {vfxReels.map((reel, i) => (
-              <div key={i} className={s.vfxCell}>
-                <video src={reel.src} autoPlay loop muted playsInline />
-                <div className={s.vfxOverlay}>
-                  <span className={s.vfxLabel}>{reel.label}</span>
-                  {reel.description && (
-                    <span className={s.vfxDesc}>{reel.description}</span>
-                  )}
+          <>
+            <br />
+            <div className={s.vfxLabel}>
+              Hover (or tap on mobile) for more information!
+            </div>
+            <br />
+            <div className={s.vfxGrid}>
+              {vfxReels.map((reel, i) => (
+                <div key={i} className={s.vfxCell}>
+                  <video src={reel.src} autoPlay loop muted playsInline />
+                  <div className={s.vfxOverlay}>
+                    <span className={s.vfxLabel}>{reel.label}</span>
+                    {reel.description && (
+                      <span className={s.vfxDesc}>{reel.description}</span>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
-            {vfxReels.length === 0 && (
-              <p className={s.emptyState}>
-                No reels here yet — check back soon.
-              </p>
-            )}
-          </div>
+              ))}
+              {vfxReels.length === 0 && (
+                <p className={s.emptyState}>
+                  No reels here yet — check back soon.
+                </p>
+              )}
+            </div>
+          </>
         ) : (
           <div className={s.projectsGrid}>
             {filtered.map((project, index) => (
