@@ -25,6 +25,7 @@ type Project = {
   featured: boolean;
   images: string[];
   subtitle: string;
+  category: "swe" | "vfx" | "game";
   linkIcon?: string;
   badgeText?: string;
   extraCredit?: ExtraCredit;
@@ -55,6 +56,7 @@ export const projects: Project[] = [
       "Steam",
     ],
     link: "https://store.steampowered.com/app/3579390/Dont_Forget_to_Smile/",
+    category: "game",
     featured: true,
     images: [
       screenshot1,
@@ -101,6 +103,7 @@ export const projects: Project[] = [
       "Figma",
     ],
     link: "#",
+    category: "swe",
     featured: false,
     images: [corpay],
     badgeText: "In Production",
@@ -113,6 +116,7 @@ export const projects: Project[] = [
     This time I'm taking the survivors formula and giving it a fresh twist with 3D graphics and more complex mechanics.`,
     stack: ["Unity", "C#", "Blender", "Adobe Suite", "FL Studio"],
     link: "",
+    category: "game",
     featured: false,
     images: [dfts2],
     badgeText: "In Development",
@@ -124,6 +128,7 @@ export const projects: Project[] = [
     description: `Vehicle rental and leasing tycoon game, currently in development. Build your fleet, manage your staff, and expand your business.`,
     stack: ["Unity", "C#", "Blender", "Adobe Suite", "FL Studio"],
     link: "",
+    category: "game",
     featured: false,
     images: [],
     badgeText: "In Development",
@@ -145,6 +150,7 @@ export const projects: Project[] = [
       "Data Driven",
     ],
     link: "",
+    category: "swe",
     featured: false,
     images: [portfolio],
     linkIcon: "",
@@ -178,6 +184,7 @@ export const projects: Project[] = [
               `,
     stack: [],
     link: "",
+    category: "swe",
     featured: false,
     images: [],
     linkIcon: "",
@@ -194,6 +201,7 @@ export const projects: Project[] = [
                   • Steam API stats - live review scores and playtime on the DFTS card.`,
     stack: [],
     link: "",
+    category: "swe",
     featured: false,
     images: [],
     linkIcon: "",

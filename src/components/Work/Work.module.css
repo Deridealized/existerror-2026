@@ -1,3 +1,112 @@
+.tabBar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #1e1e1e;
+  margin-bottom: 1px;
+}
+
+.tabBtn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  letter-spacing: 0.1em;
+  padding: 1.5rem 2rem;
+  border: none;
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  text-align: center;
+  width: 100%;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% 100%,
+    12px 100%,
+    0 calc(100% - 12px)
+  );
+}
+
+.tabBtn:hover {
+  background: #1e1e1e;
+  color: var(--color-primary-main);
+}
+
+.tabBtnActive {
+  background: var(--color-primary-main);
+  color: #000;
+}
+
+.tabBtnActive:hover {
+  background: var(--color-primary-main);
+  color: #000;
+}
+
+.vfxGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1px;
+  background: #1e1e1e;
+}
+
+.vfxCell {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: #000;
+  overflow: hidden;
+}
+
+.vfxCell video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vfxOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.vfxCell:hover .vfxOverlay {
+  opacity: 1;
+}
+
+.vfxLabel {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  color: var(--color-primary-main);
+  line-height: 1.1;
+}
+
+.vfxDesc {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: #ccc;
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+}
+
+.emptyState {
+  padding: 4rem 2rem;
+  color: #555;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+}
+
 .projectsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
