@@ -1,8 +1,28 @@
+import { useEffect, useRef, useState } from "react";
 import s from "./Hero.module.css";
 import { heroTiles } from "./heroTileInfo.ts";
 import ClockWeather from "./ClockWeather";
 
+const CV_OPTIONS = [
+  { label: "C#", file: "/JHey_CSWE_2026-pdf.pdf" },
+  { label: "Frontend", file: "/JHey_FESWE_2026.pdf" },
+  { label: "Game Dev / Design", file: "/JHey_GD_2026.pdf" },
+];
+
 const Hero = () => {
+  const [cvOpen, setCvOpen] = useState(false);
+  const cvRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (cvRef.current && !cvRef.current.contains(e.target as Node)) {
+        setCvOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
   return (
     <div className={s.hero}>
       <div className={s.heroBgText}>BOTH</div>
@@ -26,9 +46,30 @@ const Hero = () => {
           <a href="#work" className={s.btnPrimary}>
             View Work
           </a>
-          <a href="/cv.pdf" download className={s.btnOutline}>
-            Download CV ↓
-          </a>
+          <div className={s.cvDropdown} ref={cvRef}>
+            <button
+              className={s.btnOutline}
+              onClick={() => setCvOpen((o) => !o)}
+              aria-expanded={cvOpen}
+            >
+              Download CV {cvOpen ? "↑" : "↓"}
+            </button>
+            {cvOpen && (
+              <div className={s.cvMenu}>
+                {CV_OPTIONS.map((opt) => (
+                  <a
+                    key={opt.file}
+                    href={opt.file}
+                    download
+                    className={s.cvMenuItem}
+                    onClick={() => setCvOpen(false)}
+                  >
+                    {opt.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
           <a href="#contact" className={s.btnSecondary}>
             Get in touch →
           </a>
