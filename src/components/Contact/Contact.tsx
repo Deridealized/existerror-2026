@@ -1,7 +1,22 @@
+import { useEffect, useRef, useState } from "react";
 import s from "./Contact.module.css";
 import { contactDetails } from "./contactDetails";
+import { CV_OPTIONS } from "../../data/cvOptions";
 
 const Contact = () => {
+  const [cvOpen, setCvOpen] = useState(false);
+  const cvRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (cvRef.current && !cvRef.current.contains(e.target as Node)) {
+        setCvOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
+
   return (
     <div className={s.contactSection} id="contact">
       <div className={s.contactGrid}>
@@ -30,9 +45,30 @@ const Contact = () => {
               <span className={s.contactLinkArrow}>↗</span>
             </a>
           ))}
-          <a href="/cv.pdf" download className={s.btnOutline}>
-            Download CV ↓
-          </a>
+          <div className={s.cvDropdown} ref={cvRef}>
+            <button
+              className={s.btnOutline}
+              onClick={() => setCvOpen((o) => !o)}
+              aria-expanded={cvOpen}
+            >
+              Download CV {cvOpen ? "↓" : "↑"}
+            </button>
+            {cvOpen && (
+              <div className={s.cvMenu}>
+                {CV_OPTIONS.map((opt) => (
+                  <a
+                    key={opt.file}
+                    href={opt.file}
+                    download
+                    className={s.cvMenuItem}
+                    onClick={() => setCvOpen(false)}
+                  >
+                    {opt.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
