@@ -15,6 +15,7 @@ import corpay from "../../assets/Images/Generic/corpay_01.png";
 //import steam from "../../assets/Images/Generic/steam.png";
 import portfolio from "../../assets/Images/Generic/portfolio-01.png";
 import dfts2 from "../../assets/Images/Generic/dfts2-01.png";
+import rentalGame from "../../assets/Images/Generic/RentalGame_01.jpg";
 
 type Project = {
   projectType: string;
@@ -130,7 +131,7 @@ export const projects: Project[] = [
     link: "",
     category: "game",
     featured: false,
-    images: [],
+    images: [rentalGame],
     badgeText: "In Development",
   },
   {

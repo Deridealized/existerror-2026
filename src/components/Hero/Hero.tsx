@@ -36,11 +36,11 @@ const Hero = () => {
           <span className={s.nameLineB}>HEY.</span>
         </h1>
         <p className={s.heroRole + " " + s.fadeUp + " " + s.delay2}>
-          UI/UX that people actually want to use.
-          <br />
           Web Dev. React. C#.
           <br />
-          Unity Game Developer. Adobe veteran.
+          VFX. Unity Game Developer.
+          <br />
+          Adobe veteran.
         </p>
         <div className={s.heroCta + " " + s.fadeUp + " " + s.delay3}>
           <a href="#work" className={s.btnPrimary}>

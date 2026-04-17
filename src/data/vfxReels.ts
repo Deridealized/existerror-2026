@@ -16,8 +16,8 @@ export const vfxReels: VfxReel[] = [
   },
   {
     src: "/Videos/VFX/lifestyle.webm",
-    label: "In Action",
-    description: "",
+    label: "Lifestyle",
+    description: "Some iconography around my lifestyle and interests.",
     wide: true,
   },
   {
@@ -43,14 +43,15 @@ export const vfxReels: VfxReel[] = [
   },
   {
     src: "/Videos/VFX/illustrateAnimate.webm",
-    label: "In Action",
-    description: "",
+    label: "Process",
+    description: "Breakdown of how I created the (unofficial) ocado advert ->",
     wide: true,
   },
   {
     src: "/Videos/VFX/ocadoSting.webm",
-    label: "In Action",
-    description: "",
+    label: "Ocado Advert (Unofficial)",
+    description:
+      "My idea for a quick advert for Ocado online supermarket, made in my spare time for fun",
     wide: true,
   },
   {
