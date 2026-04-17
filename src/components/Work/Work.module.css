@@ -15,9 +15,11 @@
   background: var(--color-bg);
   color: var(--color-text);
   cursor: pointer;
+  transform: scale(0.92);
   transition:
     background 0.15s ease,
-    color 0.15s ease;
+    color 0.15s ease,
+    transform 0.15s ease;
   text-align: center;
   width: 100%;
   clip-path: polygon(
@@ -33,11 +35,13 @@
 .tabBtn:hover {
   background: #1e1e1e;
   color: var(--color-primary-main);
+  transform: scale(0.96);
 }
 
 .tabBtnActive {
   background: var(--color-primary-main);
   color: #000;
+  transform: scale(1);
 }
 
 .tabBtnActive:hover {
