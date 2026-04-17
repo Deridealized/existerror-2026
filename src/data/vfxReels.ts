@@ -8,10 +8,22 @@ export type VfxReel = {
 // WEBM files served from /public/Videos/VFX/
 export const vfxReels: VfxReel[] = [
   {
+    src: "/Videos/VFX/iamJamie.webm",
+    label: "Motion Typography",
+    description: "Hello world.",
+    wide: true,
+  },
+  {
+    src: "/Videos/VFX/whatido.webm",
+    label: "More Motion Typography",
+    description:
+      "I'm also a software engineer and game developer but this was created before I started wearing those hats",
+    wide: true,
+  },
+  {
     src: "/Videos/VFX/programList.webm",
     label: "Programs",
-    description:
-      "Adobe suite, vegas, unity, blender, FL Studio plus many wierd and wonderful programs I've used over the years. (Maya shouldn't be in there as I haven't used it for a while, but I've no longer got AE access to update the reel!)",
+    description: "Wierd and wonderful programs I've used over the years.",
     wide: true,
   },
   {
@@ -29,8 +41,7 @@ export const vfxReels: VfxReel[] = [
   {
     src: "/Videos/VFX/ocadoSting.webm",
     label: "Ocado Advert (Unofficial)",
-    description:
-      "My idea for a quick advert for Ocado online supermarket, made in my spare time for fun",
+    description: "My idea for an advert for Ocado",
     wide: true,
   },
 
