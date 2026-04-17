@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import s from "./Hero.module.css";
 import { heroTiles } from "./heroTileInfo.ts";
-import ClockWeather from "./ClockWeather";
 
 const CV_OPTIONS = [
   { label: "C#", file: "/JHey_CSWE_2026-pdf.pdf" },
@@ -26,8 +25,6 @@ const Hero = () => {
   return (
     <div className={s.hero}>
       <div className={s.heroBgText}>BOTH</div>
-
-      <ClockWeather />
 
       <div className={s.heroMain}>
         <div className={s.heroTag + " " + s.fadeUp}>Engineer. Designer.</div>
