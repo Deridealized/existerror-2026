@@ -21,6 +21,40 @@ export const vfxReels: VfxReel[] = [
     wide: true,
   },
   {
+    src: "/Videos/VFX/illustrateAnimate.webm",
+    label: "Process",
+    description: "Breakdown of how I created the (unofficial) ocado advert ->",
+    wide: true,
+  },
+  {
+    src: "/Videos/VFX/ocadoSting.webm",
+    label: "Ocado Advert (Unofficial)",
+    description:
+      "My idea for a quick advert for Ocado online supermarket, made in my spare time for fun",
+    wide: true,
+  },
+
+  {
+    src: "/Videos/VFX/trailer1.webm",
+    label: "Don't Forget to Smile In Action",
+    description: "",
+  },
+  {
+    src: "/Videos/VFX/trailer2.webm",
+    label: "Don't Forget to Smile In Action",
+    description: "",
+  },
+  {
+    src: "/Videos/VFX/trailer3.webm",
+    label: "Don't Forget to Smile In Action",
+    description: "",
+  },
+  {
+    src: "/Videos/VFX/trailer4.webm",
+    label: "Don't Forget to Smile In Action",
+    description: "",
+  },
+  {
     src: "/Videos/VFX/3xexplosion.webm",
     label: "Explosion",
     description: "Main explosion effect, combined with camera shakes in game",
@@ -41,19 +75,7 @@ export const vfxReels: VfxReel[] = [
     label: "Blood Splat",
     description: "Small blood splats that appear on surfaces",
   },
-  {
-    src: "/Videos/VFX/illustrateAnimate.webm",
-    label: "Process",
-    description: "Breakdown of how I created the (unofficial) ocado advert ->",
-    wide: true,
-  },
-  {
-    src: "/Videos/VFX/ocadoSting.webm",
-    label: "Ocado Advert (Unofficial)",
-    description:
-      "My idea for a quick advert for Ocado online supermarket, made in my spare time for fun",
-    wide: true,
-  },
+
   {
     src: "/Videos/VFX/confetti.webm",
     label: "Confetti",
@@ -120,26 +142,5 @@ export const vfxReels: VfxReel[] = [
     src: "/Videos/VFX/steam_fast.webm",
     label: "Steam (Fast)",
     description: "Fast-moving steam effect - dynamic and energetic",
-  },
-
-  {
-    src: "/Videos/VFX/trailer1.webm",
-    label: "In Action",
-    description: "",
-  },
-  {
-    src: "/Videos/VFX/trailer2.webm",
-    label: "In Action",
-    description: "",
-  },
-  {
-    src: "/Videos/VFX/trailer3.webm",
-    label: "In Action",
-    description: "",
-  },
-  {
-    src: "/Videos/VFX/trailer4.webm",
-    label: "In Action",
-    description: "",
   },
 ];
