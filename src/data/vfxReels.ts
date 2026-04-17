@@ -2,10 +2,24 @@ export type VfxReel = {
   src: string;
   label: string;
   description: string;
+  wide?: boolean;
 };
 
 // WEBM files served from /public/Videos/VFX/
 export const vfxReels: VfxReel[] = [
+  {
+    src: "/Videos/VFX/programList.webm",
+    label: "Programs",
+    description:
+      "Adobe suite, vegas, unity, blender, FL Studio plus many wierd and wonderful programs I've used over the years. (Maya shouldn't be in there as I haven't used it for a while, but I've no longer got AE access to update the reel!)",
+    wide: true,
+  },
+  {
+    src: "/Videos/VFX/lifestyle.webm",
+    label: "In Action",
+    description: "",
+    wide: true,
+  },
   {
     src: "/Videos/VFX/3xexplosion.webm",
     label: "Explosion",
@@ -28,10 +42,16 @@ export const vfxReels: VfxReel[] = [
     description: "Small blood splats that appear on surfaces",
   },
   {
-    src: "/Videos/VFX/bloodspray.webm",
-    label: "Blood Spray",
-    description:
-      "High-velocity blood spray effect, parents to enemies flying backwards showers the screen in juice",
+    src: "/Videos/VFX/illustrateAnimate.webm",
+    label: "In Action",
+    description: "",
+    wide: true,
+  },
+  {
+    src: "/Videos/VFX/ocadoSting.webm",
+    label: "In Action",
+    description: "",
+    wide: true,
   },
   {
     src: "/Videos/VFX/confetti.webm",
@@ -51,10 +71,32 @@ export const vfxReels: VfxReel[] = [
       "Intense fire explosion with smoke and debris, covers the screen in flames",
   },
   {
+    src: "/Videos/VFX/rocketrail.webm",
+    label: "Rocket Trail",
+    description: "Trail effect for rocket-propelled projectiles",
+  },
+  {
     src: "/Videos/VFX/gore.webm",
     label: "Gore",
     description:
       "Cartoony visceral gore effect, perfect for over-the-top violence",
+  },
+  {
+    src: "/Videos/VFX/bloodspray.webm",
+    label: "Blood Spray",
+    description:
+      "High-velocity blood spray effect, parents to enemies flying backwards showers the screen in juice",
+  },
+  {
+    src: "/Videos/VFX/slow_steam.webm",
+    label: "Steam (Slow)",
+    description: "Slow-moving steam effect - atmospheric and versatile",
+  },
+  {
+    src: "/Videos/VFX/vacuum1.webm",
+    label: "Vacuum",
+    description:
+      "Suction effect for vacuum weapons, pulls pickups towards the player",
   },
   {
     src: "/Videos/VFX/muzzle.webm",
@@ -63,19 +105,9 @@ export const vfxReels: VfxReel[] = [
       "Muzzle flash effect for firearms - (doesn't look great in isolation but works well in-game with lighting and sound)",
   },
   {
-    src: "/Videos/VFX/rocketrail.webm",
-    label: "Rocket Trail",
-    description: "Trail effect for rocket-propelled projectiles",
-  },
-  {
     src: "/Videos/VFX/shells.webm",
     label: "Shell Casings",
     description: "Casings that eject from firearms, subtle eye candy",
-  },
-  {
-    src: "/Videos/VFX/slow_steam.webm",
-    label: "Steam (Slow)",
-    description: "Slow-moving steam effect - atmospheric and versatile",
   },
   {
     src: "/Videos/VFX/star.webm",
@@ -88,12 +120,7 @@ export const vfxReels: VfxReel[] = [
     label: "Steam (Fast)",
     description: "Fast-moving steam effect - dynamic and energetic",
   },
-  {
-    src: "/Videos/VFX/vacuum1.webm",
-    label: "Vacuum",
-    description:
-      "Suction effect for vacuum weapons, pulls pickups towards the player",
-  },
+
   {
     src: "/Videos/VFX/trailer1.webm",
     label: "In Action",
