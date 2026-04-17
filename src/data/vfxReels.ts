@@ -75,18 +75,18 @@ export const vfxReels: VfxReel[] = [
     label: "Beam",
     description: "Beam effect for fully upgraded snipers",
   },
+
+  {
+    src: "/Videos/VFX/bloodsplat.webm",
+    label: "Blood Splat",
+    description: "Small blood splats that appear on surfaces",
+  },
   {
     src: "/Videos/VFX/blooddecal.webm",
     label: "Blood Decal",
     description:
       "Floor splats using masking, combined with blood and gore looks great",
   },
-  {
-    src: "/Videos/VFX/bloodsplat.webm",
-    label: "Blood Splat",
-    description: "Small blood splats that appear on surfaces",
-  },
-
   {
     src: "/Videos/VFX/confetti.webm",
     label: "Confetti",
