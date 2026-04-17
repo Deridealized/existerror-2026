@@ -13,7 +13,7 @@ const TABS: { id: Category; label: string }[] = [
 ];
 
 const Work = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>("swe");
+  const [activeCategory, setActiveCategory] = useState<Category>("vfx");
 
   const filtered = projects.filter((p) => p.category === activeCategory);
 
@@ -48,7 +48,10 @@ const Work = () => {
             <br />
             <div className={s.vfxGrid}>
               {vfxReels.map((reel, i) => (
-                <div key={i} className={`${s.vfxCell}${reel.wide ? ` ${s.vfxCellWide}` : ""}`}>
+                <div
+                  key={i}
+                  className={`${s.vfxCell}${reel.wide ? ` ${s.vfxCellWide}` : ""}`}
+                >
                   <video src={reel.src} autoPlay loop muted playsInline />
                   <div className={s.vfxOverlay}>
                     <span className={s.vfxLabel}>{reel.label}</span>
