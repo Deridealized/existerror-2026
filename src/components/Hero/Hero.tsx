@@ -1,27 +1,7 @@
-import { useEffect, useRef, useState } from "react";
 import s from "./Hero.module.css";
 import { heroTiles } from "./heroTileInfo.ts";
 
-const CV_OPTIONS = [
-  { label: "C#", file: "/JHey_CSWE_2026-pdf.pdf" },
-  { label: "Frontend", file: "/JHey_FESWE_2026.pdf" },
-  { label: "Game Dev / Design", file: "/JHey_GD_2026.pdf" },
-];
-
 const Hero = () => {
-  const [cvOpen, setCvOpen] = useState(false);
-  const cvRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (cvRef.current && !cvRef.current.contains(e.target as Node)) {
-        setCvOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
-
   return (
     <div className={s.hero}>
       <div className={s.heroBgText}>BOTH</div>

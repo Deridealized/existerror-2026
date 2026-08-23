@@ -1,22 +1,7 @@
-import { useEffect, useRef, useState } from "react";
 import s from "./Contact.module.css";
 import { contactDetails } from "./contactDetails";
-import { CV_OPTIONS } from "../../data/cvOptions";
 
 const Contact = () => {
-  const [cvOpen, setCvOpen] = useState(false);
-  const cvRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handler = (e: MouseEvent) => {
-      if (cvRef.current && !cvRef.current.contains(e.target as Node)) {
-        setCvOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
-
   return (
     <div className={s.contactSection} id="contact">
       <div className={s.contactGrid}>
