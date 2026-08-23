@@ -43,30 +43,7 @@ const Hero = () => {
           <a href="#work" className={s.btnPrimary}>
             View Work
           </a>
-          <div className={s.cvDropdown} ref={cvRef}>
-            <button
-              className={s.btnOutline}
-              onClick={() => setCvOpen((o) => !o)}
-              aria-expanded={cvOpen}
-            >
-              Download CV {cvOpen ? "↑" : "↓"}
-            </button>
-            {cvOpen && (
-              <div className={s.cvMenu}>
-                {CV_OPTIONS.map((opt) => (
-                  <a
-                    key={opt.file}
-                    href={opt.file}
-                    download
-                    className={s.cvMenuItem}
-                    onClick={() => setCvOpen(false)}
-                  >
-                    {opt.label}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+
           <a href="#contact" className={s.btnSecondary}>
             Get in touch →
           </a>

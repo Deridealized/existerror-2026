@@ -45,30 +45,6 @@ const Contact = () => {
               <span className={s.contactLinkArrow}>↗</span>
             </a>
           ))}
-          <div className={s.cvDropdown} ref={cvRef}>
-            <button
-              className={s.btnOutline}
-              onClick={() => setCvOpen((o) => !o)}
-              aria-expanded={cvOpen}
-            >
-              Download CV {cvOpen ? "↓" : "↑"}
-            </button>
-            {cvOpen && (
-              <div className={s.cvMenu}>
-                {CV_OPTIONS.map((opt) => (
-                  <a
-                    key={opt.file}
-                    href={opt.file}
-                    download
-                    className={s.cvMenuItem}
-                    onClick={() => setCvOpen(false)}
-                  >
-                    {opt.label}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
         </div>
       </div>
     </div>
