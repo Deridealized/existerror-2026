@@ -13,7 +13,7 @@ const Hero = () => {
           <span className={s.nameLineB}>HEY.</span>
         </h1>
         <p className={s.heroRole + " " + s.fadeUp + " " + s.delay2}>
-          Web Dev. React. C#.
+          Software Engineer. React. C#.
           <br />
           VFX. Unity Game Developer.
           <br />
@@ -31,15 +31,15 @@ const Hero = () => {
       </div>
 
       <div className={s.heroRight + " " + s.fadeUp + " " + s.delay2}>
-        <div className={s.statusBlock} data-label="Status">
+        {/* <div className={s.statusBlock} data-label="Status">
           <div className={s.statusValue}>
             <span className={s.availabilityDot}></span>Open to Roles
           </div>
           <div className={s.statusSub}>Frontend / Games / Creative Tech</div>
-        </div>
+        </div> */}
         <div className={s.statusBlock} data-label="Current Focus">
-          <div className={s.statusValue}>Dev / Design</div>
-          <div className={s.statusSub}>Mid Level Positions</div>
+          <div className={s.statusValue}>.NET & Angular</div>
+          {/*<div className={s.statusSub}>Mid Level Positions</div>*/}
         </div>
       </div>
 
