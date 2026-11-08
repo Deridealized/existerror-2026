@@ -39,8 +39,8 @@ const Hero = () => {
         </div> */}
         <div className={s.statusBlock} data-label="Current Focus">
           <div className={s.statusValue}>.NET & Angular</div>
-          <div className={s.statusValue}>
-            Actually fucking finishing a new game project
+          <div className={s.statusSub}>
+            and actually fucking finishing a new game project
           </div>
           {/*<div className={s.statusSub}>Mid Level Positions</div>*/}
         </div>
